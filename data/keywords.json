@@ -1,0 +1,3101 @@
+[
+  {
+    "keyword": "__phase1_start",
+    "response": [
+      {
+        "text": "あれ？メッセージ繋がってる？",
+        "delay": 2000
+      },
+      {
+        "text": "おーい、見えてますか？",
+        "delay": 2000
+      },
+      {
+        "text": "見えてたら返事してくださーい！",
+        "delay": 2000
+      }
+    ],
+    "phases": ["1"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": ["phase1_done"],
+    "clearFlags": []
+  },
+  {
+    "keyword": "__phase2_1_trigger",
+    "response": [
+      {
+        "text": "よかったぁ…誰とも連絡がつかないからどうしようかと思ってたんです",
+        "delay": 2000
+      },
+      {
+        "text": "Xのタイムラインも固まったままだし、ネット検索もできなくて…",
+        "delay": 2000
+      },
+      {
+        "text": "実は私、今日開催の「D:IV_vision」に参加しようと思って家のスマホでpictSQUAREを見ていたんですけど！急に視界が真っ暗になって……",
+        "delay": 2000
+      },
+      {
+        "text": "気づいたら、即売会会場のような場所にいたんです！！",
+        "delay": 2000
+      },
+      {
+        "text": "どこなんだろう、ここ……。",
+        "delay": 2000
+      }
+    ],
+    "phases": ["2-1"],
+    "requiredFlags": ["phase1_done"],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": ["phase2-1_done"],
+    "clearFlags": ["phase1_done"]
+  },
+  {
+    "keywords": "どこ,何処,見当たらない,みあたらない,居ない,いない,場所,ばしょ,会場,かいじょう,pictSQUARE,ｐｉｃｔＳＱＵＡＲＥ,ピクトスクエア,Webオンリー,Ｗｅｂオンリー,ウェブオンリー,D:IV_vision,D:Ⅳ_vision,ディヴィジョン,ディビジョン",
+    "response": [
+      {
+        "text": "えっ…！？<br>もしかして、D:IV_visionの会場の中に吸い込まれちゃった、とか？",
+        "delay": 2000
+      },
+      {
+        "text": "えーっと…さっき拾ったカタログの表紙には『繝�ぅ繝薙ず繝ｧ繝ｳ』って書いてあります。",
+        "delay": 2000
+      },
+      {
+        "text": "あれ？文字化けしちゃって送れない…！",
+        "delay": 2000
+      },
+      {
+        "text": "……えーっと。そうだ！外に出て確認してきます！",
+        "delay": 2000
+      },
+      {
+        "text": "聞いてください！！出口を通ったら…………会場の中に戻ってきました！！",
+        "delay": 6000
+      },
+      {
+        "text": "これって、閉じ込められてる…？まさか…私…異世界に迷い込んじゃってたり…！？",
+        "delay": 2000
+      },
+      {
+        "text": "す……",
+        "delay": 2000
+      },
+      {
+        "text": "すごいすごい！！これってきさらぎ駅とか異世界エレベーター系のやつ…！？ってことは、時空のおっさんとかも出てきたりしないかな！？ていうかまさに幽拐シリーズ実体験なのでは……！？",
+        "delay": 2000
+      },
+      {
+        "text": "私、オカルトものが大好きなんです！インターネットでもその手の怪異譚をたくさん調べていて…まさか私がその当事者になるだなんて…！どうしようどうしよう！脱出した後のために、なにかメモとか残した方がいいのかな！？",
+        "delay": 2000
+      }
+    ],
+    "phases": ["2-2"],
+    "requiredFlags": ["phase2-1_done"],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": ["phase2-2_done"],
+    "clearFlags": ["phase2-1_done"]
+  },
+  {
+    "keyword": "__phase2_3_trigger",
+    "response": [
+      {
+        "text": "す、すみません。ちょっとテンション上がっちゃいました。",
+        "delay": 2000
+      },
+      {
+        "text": "それはそうとして……もし本当に異世界に来てしまったのならば、私……どうやって家に帰ればいいの！？",
+        "delay": 2000
+      },
+      {
+        "text": "あなたとしか連絡取れないし……どうか助けてくれませんか？",
+        "delay": 2000
+      }
+    ],
+    "phases": ["2-3"],
+    "requiredFlags": ["phase2-2_done"],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": ["phase2-3_doing"],
+    "clearFlags": ["phase2-2_done"]
+  },
+  {
+    "keywords": "助ける,助けます,たすける,たすけます,良いよ,いいよ,分かった,わかった,分かりました,わかりました,了解,りょうかい,りょ,はい,ハイ,OK,ＯＫ,ok,ｏｋ,Ok,Ｏｋ,オケ,おｋ,おけ,オーケー,おーけー,オッケー,おっけー,大丈夫,だいじょうぶ,仕方ない,しかたない,しょうがない,しょーがない",
+    "response": [
+      {
+        "text": "ありがとうございます！私もこちらの情報をできる限り送りますね",
+        "delay": 2000
+      },
+      {
+        "text": "あ……アナウンスが聞こえてきました！<br>どうやら、今から始まるみたいです…！",
+        "delay": 2000
+      },
+      {
+        "text": "とはいえ…えーっと……そうですね、何かしたほうがいいこととか、知りたいことはありますか？",
+        "delay": 2000
+      },
+      {
+        "text": "スマホはあるので、写真なんかも撮れるかもです！",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3"],
+    "requiredFlags": ["phase2-3_doing"],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": ["phase3_done"],
+    "clearFlags": ["phase2-3_doing", "phase3_badStack1", "phase3_badStack2"]
+  },
+  {
+    "keywords": "いいえ,no,No,NO,嫌,いや,イヤ,やだ,ヤだ,ヤダ,やーだ,助けない,たすけない,助けません,たすけません,無理,むり,ムリ,出来ない,できない,出来ません,できません,できん,できぬ",
+    "response": [
+      {
+        "text": "ええ！？じゃあ私、このままずっとこの世界で過ごすことに……！？",
+        "delay": 2000
+      },
+      {
+        "text": "そんなの困ります！『帰るまでが同人誌即売会』なんですよ！",
+        "delay": 2000
+      },
+      {
+        "text": "お願いです！あなたしか頼れないんです……！",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3"],
+    "requiredFlags": ["phase2-3_doing"],
+    "repeatable": true,
+    "type": "text",
+    "setFlags": ["phase3_badStack1"],
+    "clearFlags": []
+  },
+  {
+    "keywords": "いいえ,no,No,NO,嫌,いや,イヤ,やだ,ヤだ,ヤダ,やーだ,助けない,たすけない,助けません,たすけません,無理,むり,ムリ,出来ない,できない,出来ません,できません,できん,できぬ",
+    "response": [
+      {
+        "text": "ええ！？じゃあ私、このままずっとこの世界で過ごすことに……！？",
+        "delay": 2000
+      },
+      {
+        "text": "そんなの困ります！『帰るまでが同人誌即売会』なんですよ！",
+        "delay": 2000
+      },
+      {
+        "text": "お願いです！あなたしか頼れないんです……！",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3"],
+    "requiredFlags": ["phase2-3_doing", "phase3_badStack1"],
+    "repeatable": true,
+    "type": "text",
+    "setFlags": ["phase3_badStack2"],
+    "clearFlags": ["phase3_badStack1"]
+  },
+  {
+    "keywords": "いいえ,no,No,NO,嫌,いや,イヤ,やだ,ヤだ,ヤダ,やーだ,助けない,たすけない,助けません,たすけません,無理,むり,ムリ,出来ない,できない,出来ません,できません,できん,できぬ",
+    "response": [
+      {
+        "text": "あ……やばっ、スマホのバッテリーが、もう……！",
+        "delay": 2000
+      },
+      {
+        "text": "たすけ縺ｵ！！お奇ゅ願がいしま没す、たす",
+        "delay": 2000
+      },
+      {
+        "text": "縺ゅ≠縺ゅ＞縺｢��≠縺ｵ縺√�縺√ｒ��↓縺奇ｽゅ��悶⊂縺ｼ繝ｴ縺ｶ縺医♀縺�⊂縺ゑｽ薙△縺�℃��ｽゑｽ暦ｽ厄ｽ励ｊ縺ｯ縺ゑｽ難ｽ�ｽ�ｽ�ｽ茨ｽ�ｽ奇ｽ�ｽ後ｒ�暦ｽ呻ｽゑｽ搾ｽ壹ｓ�假ｽ�縺ゅ≠縺ゅ＞縺｢��≠縺ｵ縺√�縺√ｒ��↓縺奇ｽゅ��悶⊂縺ｼ繝ｴ縺ｶ縺医♀縺�⊂縺ゑｽ薙△縺�℃��ｽゑｽ暦ｽ厄ｽ励ｊ縺ｯ縺ゑｽ難ｽ�ｽ�ｽ�ｽ茨ｽ�ｽ奇ｽ�ｽ後ｒ�暦ｽ呻ｽゑｽ搾ｽ壹ｓ�假ｽ�縺ゅ≠縺ゅ＞縺｢��≠縺ｵ縺√�縺√ｒ��↓縺奇ｽゅ��悶⊂縺ｼ繝ｴ縺ｶ縺医♀縺�⊂縺ゑｽ薙△縺�℃��ｽゑｽ暦ｽ厄ｽ励ｊ縺ｯ縺ゑｽ難ｽ�ｽ�ｽ�ｽ茨ｽ�ｽ奇ｽ�ｽ後ｒ�暦ｽ呻ｽゑｽ搾ｽ壹ｓ�假ｽ�縺ゅ≠縺ゅ＞縺｢��≠縺ｵ縺√�縺√ｒ��↓縺奇ｽゅ��悶⊂縺ｼ繝ｴ縺ｶ縺医♀縺�⊂縺ゑｽ薙△縺�℃��ｽゑｽ暦ｽ厄ｽ励ｊ縺ｯ縺ゑｽ難ｽ�ｽ�ｽ�ｽ茨ｽ�ｽ奇ｽ�ｽ後ｒ�暦ｽ呻ｽゑｽ搾ｽ壹ｓ�假ｽ�",
+        "delay": 1000,
+        "specialClass": "alice-alert"
+      },
+      {
+        "text": "縺ゅ≠縺ゅ＞縺｢��≠縺ｵ縺√�縺√ｒ��↓縺奇ｽゅ��悶⊂縺ｼ繝ｴ縺ｶ縺医♀縺�⊂縺ゑｽ薙△縺�℃��ｽゑｽ暦ｽ厄ｽ励ｊ縺ｯ縺ゑｽ難ｽ�ｽ�ｽ�ｽ茨ｽ�ｽ奇ｽ�ｽ後ｒ�暦ｽ呻ｽゑｽ搾ｽ壹ｓ�假ｽ�縺ゅ≠縺ゅ＞縺｢��≠縺ｵ縺√�縺√ｒ��↓縺奇ｽゅ��悶⊂縺ｼ繝ｴ縺ｶ縺医♀縺�⊂縺ゑｽ薙△縺�℃��ｽゑｽ暦ｽ厄ｽ励ｊ縺ｯ縺ゑｽ難ｽ�ｽ�ｽ�ｽ茨ｽ�ｽ奇ｽ�ｽ後ｒ�暦ｽ呻ｽゑｽ搾ｽ壹ｓ�假ｽ�縺ゅ≠縺ゅ＞縺｢��≠縺ｵ縺√�縺√ｒ��↓縺奇ｽゅ��悶⊂縺ｼ繝ｴ縺ｶ縺医♀縺�⊂縺ゑｽ薙△縺�℃��ｽゑｽ暦ｽ厄ｽ励ｊ縺ｯ縺ゑｽ難ｽ�ｽ�ｽ�ｽ茨ｽ�ｽ奇ｽ�ｽ後ｒ�暦ｽ呻ｽゑｽ搾ｽ壹ｓ�假ｽ�縺ゅ≠縺ゅ＞縺｢��≠縺ｵ縺√�縺√ｒ��↓縺奇ｽゅ��悶⊂縺ｼ繝ｴ縺ｶ縺医♀縺�⊂縺ゑｽ薙△縺�℃��ｽゑｽ暦ｽ厄ｽ励ｊ縺ｯ縺ゑｽ難ｽ�ｽ�ｽ�ｽ茨ｽ�ｽ奇ｽ�ｽ後ｒ�暦ｽ呻ｽゑｽ搾ｽ壹ｓ�假ｽ�",
+        "delay": 500,
+        "specialClass": "alice-alert"
+      },
+      {
+        "text": "縺ゅ≠縺ゅ＞縺｢��≠縺ｵ縺√�縺√ｒ��↓縺奇ｽゅ��悶⊂縺ｼ繝ｴ縺ｶ縺医♀縺�⊂縺ゑｽ薙△縺�℃��ｽゑｽ暦ｽ厄ｽ励ｊ縺ｯ縺ゑｽ難ｽ�ｽ�ｽ�ｽ茨ｽ�ｽ奇ｽ�ｽ後ｒ�暦ｽ呻ｽゑｽ搾ｽ壹ｓ�假ｽ�縺ゅ≠縺ゅ＞縺｢��≠縺ｵ縺√�縺√ｒ��↓縺奇ｽゅ��悶⊂縺ｼ繝ｴ縺ｶ縺医♀縺�⊂縺ゑｽ薙△縺�℃��ｽゑｽ暦ｽ厄ｽ励ｊ縺ｯ縺ゑｽ難ｽ�ｽ�ｽ�ｽ茨ｽ�ｽ奇ｽ�ｽ後ｒ�暦ｽ呻ｽゑｽ搾ｽ壹ｓ�假ｽ�縺ゅ≠縺ゅ＞縺｢��≠縺ｵ縺√�縺√ｒ��↓縺奇ｽゅ��悶⊂縺ｼ繝ｴ縺ｶ縺医♀縺�⊂縺ゑｽ薙△縺�℃��ｽゑｽ暦ｽ厄ｽ励ｊ縺ｯ縺ゑｽ難ｽ�ｽ�ｽ�ｽ茨ｽ�ｽ奇ｽ�ｽ後ｒ�暦ｽ呻ｽゑｽ搾ｽ壹ｓ�假ｽ�縺ゅ≠縺ゅ＞縺｢��≠縺ｵ縺√�縺√ｒ��↓縺奇ｽゅ��悶⊂縺ｼ繝ｴ縺ｶ縺医♀縺�⊂縺ゑｽ薙△縺�℃��ｽゑｽ暦ｽ厄ｽ励ｊ縺ｯ縺ゑｽ難ｽ�ｽ�ｽ�ｽ茨ｽ�ｽ奇ｽ�ｽ後ｒ�暦ｽ呻ｽゑｽ搾ｽ壹ｓ�假ｽ�",
+        "delay": 500,
+        "specialClass": "alice-alert"
+      }
+    ],
+    "phases": ["3"],
+    "requiredFlags": ["phase2-3_doing", "phase3_badStack2"],
+    "repeatable": true,
+    "type": "text",
+    "setFlags": ["phase3_badEnding"],
+    "clearFlags": ["phase2-3_doing", "phase3_badStack2"]
+  },
+  {
+    "keyword": "__phase3_badEnding_system",
+    "response": [
+      {
+        "text": "[center]ー救出失敗ー[/center]<br>あまり意地悪をしすぎると、取り返しがつかなくなることもありますからね。<br>あなたがもう一度、この物語の扉を開いてくれることを願います。",
+        "delay": 2000
+      },
+      {
+        "image": "data/img/vxOZwoEOC1Bo.jpg",
+        "delay": 2000
+      },
+      {
+        "text": "<button class='retry-btn' onclick='location.reload()'>この扉に再接続する</button>",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3"],
+    "requiredFlags": ["phase3_badEnding"],
+    "repeatable": false,
+    "type": "system",
+    "setFlags": [],
+    "clearFlags": [],
+    "lockInput": true
+  },
+  {
+    "keywords": "サークルスペース,さーくるすぺーす,サークルすぺーす,さーくるスペース,番号,ばんごう",
+    "response": [
+      {
+        "text": "サークルスペースの番号・・・ですか？",
+        "delay": 2000
+      },
+      {
+        "text": "なるほど！それで私がいる位置を特定するんですね！",
+        "delay": 2000
+      },
+      {
+        "text": "えーっと…一番近くのスペースには、「お４」って書いてあります！",
+        "delay": 2000
+      },
+      {
+        "text": "どこかのサークルにいきたいときは、スペース番号を教えてくれれば向かいます！",
+        "delay": 2000
+      }
+    ],
+    "phases": ["4"],
+    "requiredFlags": ["phase3_done"],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "サークル,さーくる,地図,ちず,マップ,まっぷ,Map,Ｍａｐ,会場図,かいじょうず",
+    "response": [
+      {
+        "text": "サークルマップの写真、ですね！少し待っていてください",
+        "delay": 2000
+      },
+      {
+        "image": "data/img/BLYvz9HRDej2.jpg",
+        "delay": 2000
+      },
+      {
+        "image": "data/img/eNNXaPoIvaDf.jpg",
+        "delay": 2000
+      },
+      {
+        "text": "あれ…？マップ全体が表示されない！<br>すみません…どうやら、一部しか送れないみたいです。",
+        "delay": 2000
+      },
+      {
+        "text": "これだけで、何かわかりますか…？",
+        "delay": 2000
+      }
+    ],
+    "phases": ["4"],
+    "requiredFlags": ["phase3_done"],
+    "repeatable": false,
+    "type": "image",
+    "setFlags": ["phase4-2_done"],
+    "clearFlags": []
+  },
+  {
+    "keywords": "持ち物,もちもの,モチモノ,持ってる,もってる,持ってます,もってます,所持品,しょじひん,手元,てもと,所持,しょじ",
+    "response": [
+      {
+        "text": "さっき拾ったこの即売会？のカタログと、ペン、そしてスマホを持っています。",
+        "delay": 2000
+      },
+      {
+        "text": "腕には、紙のリストバンドが巻かれています……この即売会の参加証になるのかな。私の力では取れなさそうです。",
+        "delay": 2000
+      },
+      {
+        "text": "モバイルバッテリーは持っていないので、充電が切れたら連絡取れなくなっちゃいますね…",
+        "delay": 2000
+      }
+    ],
+    "phases": ["4"],
+    "requiredFlags": ["phase3_done"],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": ["phase4-3_done"],
+    "clearFlags": []
+  },
+  {
+    "keywords": "カタログ,かたろぐ",
+    "response": [
+      {
+        "text": "カタログですね。ちょっと見てみます…",
+        "delay": 2000
+      },
+      {
+        "text": "サークルカットがたくさん載っています！脱出のヒントに繋がるようなものはなさそうですが…",
+        "delay": 2000
+      },
+      {
+        "text": "あ、カタログの中にもマップがありました！これで会場内のマップはいつでも確認できそうですね。あとは……付箋が貼ってあるページだけですね。",
+        "delay": 2000
+      },
+      {
+        "text": "どうでしょうか？何かわかりますか…？",
+        "delay": 2000
+      }
+    ],
+    "phases": ["4"],
+    "requiredFlags": ["phase4-2_done", "phase4-3_done"],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": ["phase4-4_done"],
+    "clearFlags": ["phase4-2_done", "phase4-3_done"]
+  },
+  {
+    "keywords": "カタログ,かたろぐ",
+    "response": [
+      {
+        "text": "カタログですね。ちょっと見てみます…",
+        "delay": 2000
+      },
+      {
+        "text": "サークルカットがたくさん載っています！脱出のヒントに繋がるようなものはなさそうですが…",
+        "delay": 2000
+      },
+      {
+        "text": "あ、カタログの中に会場内のマップがありました！役に立つかもしれないので、送っておきますね。",
+        "delay": 2000
+      },
+      {
+        "image": "data/img/BLYvz9HRDej2.jpg",
+        "delay": 2000
+      },
+      {
+        "image": "data/img/eNNXaPoIvaDf.jpg",
+        "delay": 2000
+      },
+      {
+        "text": "あれ…？マップ全体が表示されない！<br>すみません…どうやら、一部しか送れないみたいです。",
+        "delay": 2000
+      },
+      {
+        "text": "あとは……付箋が貼ってあるページだけですね。",
+        "delay": 2000
+      },
+      {
+        "text": "どうでしょうか？何かわかりますか…？",
+        "delay": 2000
+      }
+    ],
+    "phases": ["4"],
+    "requiredFlags": ["phase3_done", "phase4-3_done"],
+    "repeatable": false,
+    "type": "image",
+    "setFlags": ["phase4-5_done"],
+    "clearFlags": ["phase4-3_done"]
+  },
+  {
+    "keywords": "付箋,ふせん,フセン,ポストイット,post-it,Post-it,POST-IT,メモ,めも,Memo,Ｍｅｍｏ",
+    "response": [
+      {
+        "text": "付箋のページですね！見てみるのでちょっとお待ちください…",
+        "delay": 2000
+      },
+      {
+        "text": "こんな記事が載っていました！",
+        "delay": 2000
+      },
+      {
+        "image": "data/img/T3c1FE7iGW49.jpg",
+        "delay": 2000
+      },
+      {
+        "text": "あ……メモがはさまっていました！追加で写真を送りますね",
+        "delay": 2000
+      },
+      {
+        "image": "data/img/XZps1rgPIN8l.jpg",
+        "delay": 2000
+      },
+      {
+        "text": "……こ、故人……？あの世への持ち物……。か、カタログ……って、もしかして、今、私が持ってる……！？",
+        "delay": 2000
+      },
+      {
+        "text": "そういえば、この場所に来てから、腕にリストバンドが巻かれていました。すごくきつくて、取れないんですよね…",
+        "delay": 2000
+      },
+      {
+        "text": "さっき出口を通った時、さらにきつくなったような気がして…まるでこの世界に縛り付けるみたいに…",
+        "delay": 2000
+      },
+      {
+        "text": "……もしかしてここ、異世界じゃなくて、死後の世界…！？",
+        "delay": 2000
+      },
+      {
+        "text": "例えば、悔いを残したまま死んでしまった人たちの気持ちが集まってできた場所だったり……。",
+        "delay": 2000
+      },
+      {
+        "text": "もしそうなら…未練を晴らしてあげれば、みなさん天国へ行けたり…しないですかね？",
+        "delay": 2000
+      },
+      {
+        "text": "うん……やらないより、やってみましょう！それに、どうせならこの即売会を楽しみたいです！",
+        "delay": 2000
+      },
+      {
+        "text": "それじゃあ、まずはどこのサークルに行きましょうか？",
+        "delay": 2000
+      }
+    ],
+    "phases": ["4"],
+    "requiredFlags": ["phase4-4_done", "phase4-5_done"],
+    "repeatable": false,
+    "type": "image",
+    "setFlags": ["phase4-6_done"],
+    "clearFlags": ["phase3_done", "phase4-4_done", "phase4-5_done"]
+  },
+  {
+    "keywords": "付箋,ふせん,フセン,ポストイット,post-it,Post-it,POST-IT,メモ,めも,Memo,Ｍｅｍｏ",
+    "response": [
+      {
+        "text": "付箋のページですね！見てみるのでちょっとお待ちください…",
+        "delay": 2000
+      },
+      {
+        "text": "こんな記事が載っていました！",
+        "delay": 2000
+      },
+      {
+        "image": "data/img/T3c1FE7iGW49.jpg",
+        "delay": 2000
+      },
+      {
+        "text": "あ……メモがはさまっていました！追加で写真を送りますね",
+        "delay": 2000
+      },
+      {
+        "image": "data/img/XZps1rgPIN8l.jpg",
+        "delay": 2000
+      },
+      {
+        "text": "……こ、故人……？あの世への持ち物……。か、カタログ……って、もしかして、今、私が持ってる……！？",
+        "delay": 2000
+      },
+      {
+        "text": "そういえば、この場所に来てから、腕にリストバンドが巻かれていました。すごくきつくて、取れないんですよね…",
+        "delay": 2000
+      },
+      {
+        "text": "さっき出口を通った時、さらにきつくなったような気がして…まるでこの世界に縛り付けるみたいに…",
+        "delay": 2000
+      },
+      {
+        "text": "……もしかしてここ、異世界じゃなくて、死後の世界…！？",
+        "delay": 2000
+      },
+      {
+        "text": "例えば、悔いを残したまま死んでしまった人たちの気持ちが集まってできた場所だったり……。",
+        "delay": 2000
+      },
+      {
+        "text": "もしそうなら…未練を晴らしてあげれば、みなさん天国へ行けたり…しないですかね？",
+        "delay": 2000
+      },
+      {
+        "text": "うん……やらないより、やってみましょう！それに、どうせならこの即売会を楽しみたいです！",
+        "delay": 2000
+      },
+      {
+        "text": "それじゃあ、まずはどこのサークルに行きましょうか？",
+        "delay": 2000
+      }
+    ],
+    "phases": ["4"],
+    "requiredFlags": ["phase4-4_done"],
+    "repeatable": false,
+    "type": "image",
+    "setFlags": ["phase4-6_done"],
+    "clearFlags": ["phase3_done", "phase4-4_done"]
+  },
+  {
+    "keywords": "付箋,ふせん,フセン,ポストイット,post-it,Post-it,POST-IT,メモ,めも,Memo,Ｍｅｍｏ",
+    "response": [
+      {
+        "text": "付箋のページですね！見てみるのでちょっとお待ちください…",
+        "delay": 2000
+      },
+      {
+        "text": "こんな記事が載っていました！",
+        "delay": 2000
+      },
+      {
+        "image": "data/img/T3c1FE7iGW49.jpg",
+        "delay": 2000
+      },
+      {
+        "text": "あ……メモがはさまっていました！追加で写真を送りますね",
+        "delay": 2000
+      },
+      {
+        "image": "data/img/XZps1rgPIN8l.jpg",
+        "delay": 2000
+      },
+      {
+        "text": "……こ、故人……？あの世への持ち物……。か、カタログ……って、もしかして、今、私が持ってる……！？",
+        "delay": 2000
+      },
+      {
+        "text": "そういえば、この場所に来てから、腕にリストバンドが巻かれていました。すごくきつくて、取れないんですよね…",
+        "delay": 2000
+      },
+      {
+        "text": "さっき出口を通った時、さらにきつくなったような気がして…まるでこの世界に縛り付けるみたいに…",
+        "delay": 2000
+      },
+      {
+        "text": "……もしかしてここ、異世界じゃなくて、死後の世界…！？",
+        "delay": 2000
+      },
+      {
+        "text": "例えば、悔いを残したまま死んでしまった人たちの気持ちが集まってできた場所だったり……。",
+        "delay": 2000
+      },
+      {
+        "text": "もしそうなら…未練を晴らしてあげれば、みなさん天国へ行けたり…しないですかね？",
+        "delay": 2000
+      },
+      {
+        "text": "うん……やらないより、やってみましょう！それに、どうせならこの即売会を楽しみたいです！",
+        "delay": 2000
+      },
+      {
+        "text": "それじゃあ、まずはどこのサークルに行きましょうか？",
+        "delay": 2000
+      }
+    ],
+    "phases": ["4"],
+    "requiredFlags": ["phase4-5_done"],
+    "repeatable": false,
+    "type": "image",
+    "setFlags": ["phase4-6_done"],
+    "clearFlags": ["phase3_done", "phase4-5_done"]
+  },
+  {
+    "keywords": "周り,まわり,辺り,あたり,周囲,しゅうい,キョロキョロ,きょろきょろ,見回す,みまわす,見渡す,みわたす",
+    "response": [
+      {
+        "text": "周りには…うーん、サークルスペースはあるんですけど…",
+        "delay": 2000
+      },
+      {
+        "text": "ほかに目立ったものは特にないですね…",
+        "delay": 2000
+      },
+      {
+        "text": "何か調べることはありますか？",
+        "delay": 2000
+      }
+    ],
+    "phases": ["4"],
+    "requiredFlags": ["phase3_done"],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "サークルチェック,さーくるちぇっく,サークルちぇっく,さーくるチェック,印,しるし,マーク,まーく,マーキング,まーきんぐ,Mark,Ｍａｒｋ",
+    "response": [
+      {
+        "text": "D:IV_visionの出展サークルチェックはばっちりですよ！",
+        "delay": 2000
+      },
+      {
+        "text": "楽しみにしてたのに…早く帰っていろんな作品を見たいのに～！",
+        "delay": 2000
+      },
+      {
+        "text": "そういえば、こっちの世界でもサークル出展はされているのかな？",
+        "delay": 2000
+      }
+    ],
+    "phases": ["4"],
+    "requiredFlags": ["phase3_done"],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "あ２,Awaited",
+    "response": [
+      {
+        "text": "「あ２」に行けばいいんですか？わかりました！",
+        "delay": 2000
+      },
+      {
+        "text": "到着しました。机の上には頒布物が置いてあります。スペース内には、黒い人影も見えますね。",
+        "delay": 6000
+      },
+      {
+        "text": "何か調べることはありますか？",
+        "delay": 2000
+      }
+    ],
+    "phases": ["5"],
+    "requiredFlags": ["phase4-6_done"],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": ["phase5-A-1_done"],
+    "clearFlags": []
+  },
+  {
+    "keywords": "スペース,すぺーす,机の上,つくえのうえ,テーブルの上,てーぶるのうえ",
+    "response": [
+      {
+        "text": "机の上にはいくつか同人誌が置かれていますよ。",
+        "delay": 2000
+      },
+      {
+        "text": "お品書きと見比べてみると、どうやら、新刊にあたる本だけが置いてないみたいですね……",
+        "delay": 2000
+      }
+    ],
+    "phases": ["5"],
+    "requiredFlags": ["phase5-A-1_done"],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "新刊,しんかん,頒布物,はんぷぶつ,新しい本,同人誌,本",
+    "response": [
+      {
+        "text": "机の上には、新刊が……あれ！？ありません！！",
+        "delay": 2000
+      },
+      {
+        "text": "もしかすると、トラブルで新刊が届いてないのかもしれないです……！",
+        "delay": 2000
+      },
+      {
+        "text": "……あ、頒布物に、ペーパーが増えました。急遽用意したのでしょうか……写真撮りますね！",
+        "delay": 2000
+      },
+      {
+        "image": "data/img/NpOj8Qz7gXxb.png",
+        "delay": 2000
+      },
+      {
+        "text": "これは…なんでしょう？クエスチョン…問題ってこと？",
+        "delay": 2000
+      },
+      {
+        "text": "これだけじゃよくわからないですね…何かと照らし合わせるんでしょうか？でも、他にそれらしいものは見当たらないです。",
+        "delay": 2000
+      }
+    ],
+    "phases": ["5"],
+    "requiredFlags": ["phase5-A-1_done"],
+    "repeatable": false,
+    "type": "image",
+    "setFlags": ["phase5-A-4_doing"],
+    "clearFlags": []
+  },
+  {
+    "keywords": "声をかけて,こえをかけて,声かけて,こえかけて,話しかけて,はなしかけて,話して,はなして,話す,はなす,喋って,しゃべって,会話,人,サークル主,誰か",
+    "response": [
+      {
+        "text": "おーい。聞こえますか？……<br>声がけに反応はありません、が……",
+        "delay": 2000
+      },
+      {
+        "text": "「届かない」……何度もそう繰り返している声が聞こえます。",
+        "delay": 2000
+      }
+    ],
+    "phases": ["5"],
+    "requiredFlags": ["phase5-A-1_done"],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "loco,LOCO,Loco",
+    "response": [
+      {
+        "text": "ペーパーに、「loco」……と書き込んでみました！",
+        "delay": 2000
+      },
+      {
+        "text": "あ……スタッフさんのような人影が……段ボールを運んできてくれたみたいです！",
+        "delay": 2000
+      },
+      {
+        "text": "何かを差し出してくれてる…これは、同人誌！",
+        "delay": 2000
+      },
+      {
+        "text": "タイトルは「loco」……音楽用語で「その場所で」というような意味ですよね？<br>そっか、これが貴方が即売会という場所で頒布したかった同人誌、なんですね",
+        "delay": 2000
+      },
+      {
+        "text": "もし、ここが死者の世界なのだとしたら……例えば、この本を出せないまま死んでしまった、ってことだったり？",
+        "delay": 2000
+      },
+      {
+        "text": "それは……すごく、悔しいでしょうね。私、この本、大切に読みますね。",
+        "delay": 2000
+      }
+    ],
+    "phases": ["5"],
+    "requiredFlags": ["phase5-A-4_doing"],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": ["phase5-A-5_done"],
+    "clearFlags": ["phase5-A-1_done", "phase5-A-4_doing"]
+  },
+  {
+    "keywords": "い５,Blank",
+    "response": [
+      {
+        "text": "「い５」に行けばいいんですか？わかりました！",
+        "delay": 2000
+      },
+      {
+        "text": "到着しました。机の上には頒布物が……あれ？何も置いてありません！",
+        "delay": 6000
+      },
+      {
+        "text": "スペースには誰もいません……どうしましょう？何か調べることはありますか？",
+        "delay": 2000
+      }
+    ],
+    "phases": ["5"],
+    "requiredFlags": ["phase4-6_done"],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": ["phase5-B-1_done"],
+    "clearFlags": []
+  },
+  {
+    "keywords": "スペース,すぺーす,机の上,つくえのうえ,テーブルの上,てーぶるのうえ,頒布物,はんぷぶつ,新刊,しんかん,同人誌,本",
+    "response": [
+      {
+        "text": "えーっと、机の上には、……わ！急に黒いもやに包まれた人影が現れました！",
+        "delay": 2000
+      },
+      {
+        "text": "机の上に、封筒を置いていって…消えちゃいました。スタッフさんでしょうか？",
+        "delay": 2000
+      },
+      {
+        "text": "見本誌提出用の封筒ですね。これって、即売会開始までに運営に提出しなくちゃいけないものですよね…？<br>サークル主さんはどこにいるんでしょうか！？",
+        "delay": 2000
+      }
+    ],
+    "phases": ["5"],
+    "requiredFlags": ["phase5-B-1_done"],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": ["phase5-B-2_done"],
+    "clearFlags": []
+  },
+  {
+    "keywords": "声をかけて,こえをかけて,声かけて,こえかけて,話しかけて,はなしかけて,話して,はなして,話す,はなす,喋って,しゃべって,会話,人,サークル主,誰か",
+    "response": [
+      {
+        "text": "誰もいないので、話せないです…",
+        "delay": 2000
+      },
+      {
+        "text": "おーーーーーい！！！！！！",
+        "delay": 2000
+      },
+      {
+        "text": "……って、呼んでみても誰も来ませんね。",
+        "delay": 2000
+      }
+    ],
+    "phases": ["5"],
+    "requiredFlags": ["phase5-B-2_done"],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": ["phase5-B-1_done"]
+  },
+  {
+    "keywords": "封筒,ふうとう,フウトウ,開けて,あけて,開く,ひらく,オープン,おーぷん,Open,Ｏｐｅｎ",
+    "response": [
+      {
+        "text": "封筒の中に、こんな紙が入っていました！送りますね！",
+        "delay": 2000
+      },
+      {
+        "image": "data/img/ASurGKFeonow.png",
+        "delay": 2000
+      },
+      {
+        "text": "これも……謎、でしょうか？<br>何か見覚えはありますか？",
+        "delay": 2000
+      },
+      {
+        "text": "私の方では、これ以外に何も見当たりません。",
+        "delay": 2000
+      }
+    ],
+    "phases": ["5"],
+    "requiredFlags": ["phase5-B-2_done"],
+    "repeatable": false,
+    "type": "image",
+    "setFlags": ["phase5-B-4_doing"],
+    "clearFlags": ["phase5-B-2_done"]
+  },
+  {
+    "keywords": "accent,ACCENT,Accent",
+    "response": [
+      {
+        "text": "「accent」…封筒に、書き込んでみました。",
+        "delay": 2000
+      },
+      {
+        "text": "あ……人影が、走ってきました！急いで設営準備をしてるみたいです。",
+        "delay": 2000
+      },
+      {
+        "text": "なるほど、新刊の名前が「accent」…強調する、強く、といった意味でしょうか。",
+        "delay": 2000
+      },
+      {
+        "text": "封筒に本を入れて、本部に提出しに行ったみたいですね。<br>どうやら欠席になりそうだったところを、助けてあげられたみたいです！",
+        "delay": 2000
+      },
+      {
+        "text": "同人誌即売会に行きたいという強い思いが、この人をこの場所に呼んだ……なんて、私の考えすぎですかね？",
+        "delay": 2000
+      },
+      {
+        "text": "せっかくなので、新刊、買っていこうと思います！<br>お金は…ここに置いておけばいいかな？",
+        "delay": 2000
+      },
+      {
+        "text": "あ……戻ってきたサークル主さん、心なしか嬉しそうに見えます。よかった…！",
+        "delay": 2000
+      }
+    ],
+    "phases": ["5"],
+    "requiredFlags": ["phase5-B-4_doing"],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": ["phase5-B-5_done"],
+    "clearFlags": ["phase5-B-1_done", "phase5-B-4_doing"]
+  },
+  {
+    "keywords": "う４,Curtain Call",
+    "response": [
+      {
+        "text": "「う４」に行けばいいんですか？わかりました！",
+        "delay": 2000
+      },
+      {
+        "text": "到着しました。机の上には頒布物が置いてあります！これは……",
+        "delay": 6000
+      },
+      {
+        "image": "data/img/DxDuOJwu5l4F.png",
+        "delay": 2000
+      },
+      {
+        "text": "オリジナルの謎解きを展示しているみたいです！",
+        "delay": 2000
+      },
+      {
+        "text": "これだけで解けるのでしょうか…？Ｆの形は、見たことありますね。",
+        "delay": 2000
+      },
+      {
+        "text": "音楽に関連することでしょうか…？私にはさっぱりです…。",
+        "delay": 2000
+      }
+    ],
+    "phases": ["5"],
+    "requiredFlags": ["phase4-6_done"],
+    "repeatable": false,
+    "type": "image",
+    "setFlags": ["phase5-C-1_doing"],
+    "clearFlags": []
+  },
+  {
+    "keywords": "スペース,すぺーす,机の上,つくえのうえ,テーブルの上,てーぶるのうえ,新刊,頒布物,しんかん,はんぷぶつ,同人誌,本",
+    "response": [
+      {
+        "text": "机の上には、さっき送った写真の紙だけです。他には何もありません。",
+        "delay": 2000
+      }
+    ],
+    "phases": ["5"],
+    "requiredFlags": ["phase5-C-1_doing"],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "声をかけて,こえをかけて,声かけて,こえかけて,話しかけて,はなしかけて,話して,はなして,話す,はなす,喋って,しゃべって,会話,人,サークル主,誰か",
+    "response": [
+      {
+        "text": "……電話で誰かと話しながら、ノートPCに何かを打ち込んでいます。<br>なんだか忙しそうな雰囲気……話も終わりそうにないです。",
+        "delay": 2000
+      },
+      {
+        "text": "おーい！！ヒントくださーーい！！",
+        "delay": 2000
+      },
+      {
+        "text": "……無反応です（涙）",
+        "delay": 2000
+      }
+    ],
+    "phases": ["5"],
+    "requiredFlags": ["phase5-C-1_doing"],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "fine,FINE,Fine",
+    "response": [
+      {
+        "text": "そっか！答えは「fine」ですね！？<br>フィーネ……確か、イタリア語で「終わり」という意味です。",
+        "delay": 2000
+      },
+      {
+        "text": "大学で第二外国語イタリア語にしてたの、役立った～！<br>まさかこんなところで知識が活きるなんて嬉しいです。",
+        "delay": 2000
+      },
+      {
+        "text": "……さきほどから、サークル主さんがずっとノートPCで何かを打っていて……こっそり画面を覗き見ちゃったのですが、この作家さんは、この謎制作を最後に同人活動をやめなくちゃいけなかったみたいです。仕事の都合のようでした。",
+        "delay": 2000
+      },
+      {
+        "text": "最後にもう1回だけ、誰かに謎を解いてもらいたい――……そんな想いが、この場所に引き寄せたのでしょうか。",
+        "delay": 2000
+      },
+      {
+        "text": "あ……答えを書き込んだら、こっちを見てくれました！なんだか嬉しそう……！",
+        "delay": 2000
+      },
+      {
+        "text": "……わ！クリア特典でチロルチョコがもらえました！！",
+        "delay": 2000
+      },
+      {
+        "text": "即売会でもらうお菓子といえばチロルチョコってイメージがありますね！<br>こういうの用意するのも楽しいだろうなあ。",
+        "delay": 2000
+      }
+    ],
+    "phases": ["5"],
+    "requiredFlags": ["phase5-C-1_doing"],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": ["phase5-C-4_done"],
+    "clearFlags": ["phase5-C-1_doing"]
+  },
+  {
+    "keyword": "__phase5_progress_33",
+    "response": [
+      {
+        "text": "あ……リストバンドが少しゆるまった気がします！！",
+        "delay": 2000
+      },
+      {
+        "text": "さて、次はどうしましょうか？",
+        "delay": 2000
+      }
+    ],
+    "phases": ["5"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": ["phase5_33perDone"],
+    "clearFlags": []
+  },
+  {
+    "keyword": "__phase5_progress_66",
+    "response": [
+      {
+        "text": "あれ。リストバンド、またゆるくなったかも…？実際につけるならこのくらいがちょうどいいですね。",
+        "delay": 2000
+      },
+      {
+        "text": "さて、次はどうしましょうか？",
+        "delay": 2000
+      }
+    ],
+    "phases": ["5"],
+    "requiredFlags": ["phase5_33perDone"],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": ["phase5_66perDone"],
+    "clearFlags": ["phase5_33perDone"]
+  },
+  {
+    "keyword": "__phase5_progress_99",
+    "response": [
+      {
+        "text": "わっ、リストバンドがさらにゆるまりました！気を抜いたら腕から抜けそう…落とさないように気をつけなくちゃ。",
+        "delay": 2000
+      },
+      {
+        "text": "さて、次はどうしましょうか？",
+        "delay": 2000
+      }
+    ],
+    "phases": ["5"],
+    "requiredFlags": ["phase5_66perDone"],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": ["phase5_99perDone"],
+    "clearFlags": [
+      "phase4-6_done",
+      "phase5-A-5_done",
+      "phase5-B-5_done",
+      "phase5_66perDone"
+    ]
+  },
+  {
+    "keywords": "分からない,わからない,分からん,わからん,難しい,むずかしい,むずい,無理,ムリ,むり,助けて,たすけて",
+    "response": [
+      {
+        "text": "他にもサークルはあるみたいですから…他の場所に行ってみましょう！",
+        "delay": 2000
+      },
+      {
+        "text": "もし今のスペースに戻りたくなったら、もう一度スペースの番号か名前を教えてもらえればすぐ戻ってきますからね！",
+        "delay": 2000
+      }
+    ],
+    "phases": ["5"],
+    "requiredFlags": ["phase5-A-4_doing"],
+    "repeatable": true,
+    "type": "text",
+    "setFlags": ["phase5-A-4_doing_save"],
+    "clearFlags": ["phase5-A-4_doing"]
+  },
+  {
+    "keywords": "分からない,わからない,分からん,わからん,難しい,むずかしい,むずい,無理,ムリ,むり,助けて,たすけて",
+    "response": [
+      {
+        "text": "他にもサークルはあるみたいですから…他の場所に行ってみましょう！",
+        "delay": 2000
+      },
+      {
+        "text": "もし今のスペースに戻りたくなったら、もう一度スペースの番号か名前を教えてもらえればすぐ戻ってきますからね！",
+        "delay": 2000
+      }
+    ],
+    "phases": ["5"],
+    "requiredFlags": ["phase5-B-4_doing"],
+    "repeatable": true,
+    "type": "text",
+    "setFlags": ["phase5-B-4_doing_save"],
+    "clearFlags": ["phase5-B-4_doing"]
+  },
+  {
+    "keywords": "分からない,わからない,分からん,わからん,難しい,むずかしい,むずい,無理,ムリ,むり,助けて,たすけて",
+    "response": [
+      {
+        "text": "他にもサークルはあるみたいですから…他の場所に行ってみましょう！",
+        "delay": 2000
+      },
+      {
+        "text": "もし今のスペースに戻りたくなったら、もう一度スペースの番号か名前を教えてもらえればすぐ戻ってきますからね！",
+        "delay": 2000
+      }
+    ],
+    "phases": ["5"],
+    "requiredFlags": ["phase5-C-1_doing"],
+    "repeatable": true,
+    "type": "text",
+    "setFlags": ["phase5-C-1_doing_save"],
+    "clearFlags": ["phase5-C-1_doing"]
+  },
+  {
+    "keywords": "分からない,わからない,分からん,わからん,難しい,むずかしい,むずい,無理,ムリ,むり,助けて,たすけて",
+    "response": [
+      {
+        "text": "ここが最後のサークルな気がします…！頑張って解きたいです…！",
+        "delay": 2000
+      }
+    ],
+    "phases": ["5"],
+    "requiredFlags": ["phase5-A-4_doing", "phase5_66perDone"],
+    "repeatable": true,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "分からない,わからない,分からん,わからん,難しい,むずかしい,むずい,無理,ムリ,むり,助けて,たすけて",
+    "response": [
+      {
+        "text": "ここが最後のサークルな気がします…！頑張って解きたいです…！",
+        "delay": 2000
+      }
+    ],
+    "phases": ["5"],
+    "requiredFlags": ["phase5-B-4_doing", "phase5_66perDone"],
+    "repeatable": true,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "分からない,わからない,分からん,わからん,難しい,むずかしい,むずい,無理,ムリ,むり,助けて,たすけて",
+    "response": [
+      {
+        "text": "ここが最後のサークルな気がします…！頑張って解きたいです…！",
+        "delay": 2000
+      }
+    ],
+    "phases": ["5"],
+    "requiredFlags": ["phase5-C-1_doing", "phase5_66perDone"],
+    "repeatable": true,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "あ２",
+    "response": [
+      {
+        "text": "「あ２」に戻ってきました！問題に再挑戦しましょう！",
+        "delay": 2000
+      },
+      {
+        "image": "data/img/NpOj8Qz7gXxb.png",
+        "delay": 2000
+      }
+    ],
+    "phases": ["5"],
+    "requiredFlags": ["phase5-A-4_doing_save"],
+    "repeatable": true,
+    "type": "image",
+    "setFlags": ["phase5-A-4_doing"],
+    "clearFlags": ["phase5-A-4_doing_save"]
+  },
+  {
+    "keywords": "い５",
+    "response": [
+      {
+        "text": "「い５」に戻ってきました！問題に再挑戦しましょう！",
+        "delay": 2000
+      },
+      {
+        "image": "data/img/ASurGKFeonow.png",
+        "delay": 2000
+      }
+    ],
+    "phases": ["5"],
+    "requiredFlags": ["phase5-B-4_doing_save"],
+    "repeatable": true,
+    "type": "image",
+    "setFlags": ["phase5-B-4_doing"],
+    "clearFlags": ["phase5-B-4_doing_save"]
+  },
+  {
+    "keywords": "う６",
+    "response": [
+      {
+        "text": "「う６」に戻ってきました！問題に再挑戦しましょう！",
+        "delay": 2000
+      },
+      {
+        "image": "data/img/DxDuOJwu5l4F.png",
+        "delay": 2000
+      }
+    ],
+    "phases": ["5"],
+    "requiredFlags": ["phase5-C-1_doing_save"],
+    "repeatable": true,
+    "type": "image",
+    "setFlags": ["phase5-C-1_doing"],
+    "clearFlags": ["phase5-C-1_doing_save"]
+  },
+  {
+    "keywords": "チロル,ちろる,チョコ,ちょこ,包み紙,つつみがみ,包装,ほうそう",
+    "response": [
+      {
+        "text": "え？クリア景品のチロルチョコ？じ、実は……さっきもう食べちゃって……",
+        "delay": 2000
+      },
+      {
+        "text": "わ、私だってヨモツヘグイのことは知っていますよ！でも、だって……お腹空いちゃったんですもん……。",
+        "delay": 2000
+      },
+      {
+        "text": "包み紙の写真だけなら……ちょっとだけ待ってくださいね。",
+        "delay": 2000
+      },
+      {
+        "image": "data/img/Tpp0jkjwplu6.jpg",
+        "delay": 2000
+      },
+      {
+        "text": "あれ？包み紙の中に、何か書いてありますね。",
+        "delay": 2000
+      }
+    ],
+    "phases": ["5"],
+    "requiredFlags": ["phase5-C-4_done"],
+    "repeatable": false,
+    "type": "image",
+    "setFlags": ["phase5all_done"],
+    "clearFlags": ["phase5-C-4_done"]
+  },
+  {
+    "keyword": "__phase6_auto",
+    "response": [
+      {
+        "image": "data/img/FyhvVD8xKalt.png",
+        "delay": 2000
+      },
+      {
+        "text": "え…？どうしたんですか、突然変な画像を送ってきて…",
+        "delay": 2000
+      },
+      {
+        "text": "あれっ…違う、これ、私から送られてる…！？私は何も送ってないのに？！",
+        "delay": 2000
+      },
+      {
+        "text": "…もしかすると、これも脱出のための手がかりなんじゃないでしょうか…？",
+        "delay": 2000
+      },
+      {
+        "text": "ほら、電波ジャックとか、そういう感じの！",
+        "delay": 2000
+      },
+      {
+        "text": "なんとなく、この謎が最後の謎なんじゃないでしょうか…！一緒に解き明かしましょう！",
+        "delay": 2000
+      },
+      {
+        "text": "何か調べたいことがあったら、いつでも伝えてくださいね！",
+        "delay": 2000
+      }
+    ],
+    "phases": ["6"],
+    "requiredFlags": ["phase5all_done", "phase5_99perDone"],
+    "repeatable": false,
+    "type": "image",
+    "setFlags": ["phase6_done"],
+    "clearFlags": ["phase5all_done", "phase5_99perDone"]
+  },
+  {
+    "keywords": "地図,会場図,マップ",
+    "response": [
+      {
+        "text": "もう一度、地図を見てみましょう！",
+        "delay": 2000
+      },
+      {
+        "image": "data/img/BLYvz9HRDej2.jpg",
+        "delay": 2000
+      },
+      {
+        "image": "data/img/eNNXaPoIvaDf.jpg",
+        "delay": 2000
+      },
+      {
+        "text": "何かわかりましたか…？",
+        "delay": 2000
+      }
+    ],
+    "phases": ["6"],
+    "requiredFlags": ["phase6_done"],
+    "repeatable": false,
+    "type": "image",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "カタログ,記事",
+    "response": [
+      {
+        "text": "カタログの中の記事……もう一度お送りしますね。",
+        "delay": 2000
+      },
+      {
+        "image": "data/img/T3c1FE7iGW49.jpg",
+        "delay": 2000
+      },
+      {
+        "text": "うーん…何か気づきましたか？",
+        "delay": 2000
+      }
+    ],
+    "phases": ["6"],
+    "requiredFlags": ["phase6_done"],
+    "repeatable": false,
+    "type": "image",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "付箋,メモ,用紙",
+    "response": [
+      {
+        "text": "メモ用紙ですね！今、送ります。",
+        "delay": 2000
+      },
+      {
+        "image": "data/img/XZps1rgPIN8l.jpg",
+        "delay": 2000
+      },
+      {
+        "text": "うう…色々持たせてくれるのはありがたいですが…何かわかりましたか…？",
+        "delay": 2000
+      }
+    ],
+    "phases": ["6"],
+    "requiredFlags": ["phase6_done"],
+    "repeatable": false,
+    "type": "image",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "謎あ,あ２,問題A,Awaited,LOCO,Loco,loco",
+    "response": [
+      {
+        "text": "「あ２」の頒布物の写真ですね！",
+        "delay": 2000
+      },
+      {
+        "image": "data/img/NpOj8Qz7gXxb.png",
+        "delay": 2000
+      },
+      {
+        "text": "何か関係があるんでしょうか…わかったことがあれば教えてください！",
+        "delay": 2000
+      }
+    ],
+    "phases": ["6"],
+    "requiredFlags": ["phase6_done"],
+    "repeatable": false,
+    "type": "image",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "謎い,い５,問題B,Blank,ACCENT,Accent,accent",
+    "response": [
+      {
+        "text": "「い５」の頒布物の写真ですね！",
+        "delay": 2000
+      },
+      {
+        "image": "data/img/ASurGKFeonow.png",
+        "delay": 2000
+      },
+      {
+        "text": "何か関係があるんでしょうか…わかったことがあれば教えてください！",
+        "delay": 2000
+      }
+    ],
+    "phases": ["6"],
+    "requiredFlags": ["phase6_done"],
+    "repeatable": false,
+    "type": "image",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "謎う,う４,問題C,Curtain Call,FINE,Fine,fine",
+    "response": [
+      {
+        "text": "「う４」の頒布物の写真ですね！",
+        "delay": 2000
+      },
+      {
+        "image": "data/img/DxDuOJwu5l4F.png",
+        "delay": 2000
+      },
+      {
+        "text": "何か関係があるんでしょうか…わかったことがあれば教えてください！",
+        "delay": 2000
+      }
+    ],
+    "phases": ["6"],
+    "requiredFlags": ["phase6_done"],
+    "repeatable": false,
+    "type": "image",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "チロル,ちろる,チョコ,ちょこ,包み紙,つつみがみ,包装,ほうそう",
+    "response": [
+      {
+        "text": "包み紙ですね！ちょっとお待ちください…",
+        "delay": 2000
+      },
+      {
+        "image": "data/img/Tpp0jkjwplu6.jpg",
+        "delay": 2000
+      },
+      {
+        "text": "ここに書かれた謎の暗号……どこか見覚えがありますね。",
+        "delay": 2000
+      }
+    ],
+    "phases": ["6"],
+    "requiredFlags": ["phase6_done"],
+    "repeatable": false,
+    "type": "image",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "謎え,さっきの画像,変な画像",
+    "response": [
+      {
+        "image": "data/img/FyhvVD8xKalt.png",
+        "delay": 2000
+      },
+      {
+        "text": "わっ！また勝手に送られました……！<br>私のスマホ、本当に電波ジャックされちゃってるんでしょうか……",
+        "delay": 2000
+      },
+      {
+        "text": "この問題、私にはさっぱりですが……何かわかりましたか？",
+        "delay": 2000
+      }
+    ],
+    "phases": ["6"],
+    "requiredFlags": ["phase6_done"],
+    "repeatable": false,
+    "type": "image",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "お１",
+    "response": [
+      {
+        "text": "答えは「お１」…ですね。",
+        "delay": 2000
+      },
+      {
+        "text": "それって、もしかしてスペースの番号？",
+        "delay": 2000
+      },
+      {
+        "text": "とにかく物は試し！お１のスペースに行ってみます…！",
+        "delay": 2000
+      },
+      {
+        "text": "……到着！",
+        "delay": 6000
+      },
+      {
+        "text": "さっきまでは確かに何もなかったはずなのに……スペースの前に、扉がある！出口なのかな…？",
+        "delay": 2000
+      },
+      {
+        "text": "う～ん…でも、なんだか真っ暗で…この中に入るのは、ちょっと気が引ける…かも…",
+        "delay": 2000
+      },
+      {
+        "text": "何かを見落としてる可能性もあるけど、もう会場内は調べたし……",
+        "delay": 2000
+      },
+      {
+        "text": "う～ん……だめだ、思いつかない！！",
+        "delay": 2000
+      },
+      {
+        "text": "私はどうしたらいいの…！？",
+        "delay": 2000
+      }
+    ],
+    "phases": ["7"],
+    "requiredFlags": ["phase6_done"],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": ["phase7_done"],
+    "clearFlags": ["phase6_done"]
+  },
+  {
+    "keywords": "リストバンド外,リストバンドはず,リストバンドを外,リストバンドをはず,リストバンド取,リストバンドと,リストバンドを取,リストバンドをと,リストバンド切,リストバンドき,リストバンドを切,リストバンドをき,リストバンド破,リストバンドやぶ,リストバンドを破,リストバンドをやぶ",
+    "response": [
+      {
+        "text": "腕のリストバンドを、取るんですね…！？わかった！！えいっ！！",
+        "delay": 2000
+      },
+      {
+        "text": "……",
+        "delay": 2000
+      },
+      {
+        "text": "わーっ！",
+        "delay": 5000
+      },
+      {
+        "text": "さっきまで、どんよりと渦巻いていた出口が……光り輝いてる！まるで交錯少女みたい！",
+        "delay": 4000
+      },
+      {
+        "text": "あ……光の向こう側に、うっすらと私の部屋が見える！！",
+        "delay": 4000
+      },
+      {
+        "text": "これをくぐれば…元の世界に帰れるってことですよね…きっと！<br>やったー！やっとD:IV_visionに遊びに行ける！",
+        "delay": 4000
+      },
+      {
+        "text": "……あのね。私、本当は「D:IV_vision」にサークル参加しようか、迷ってたんです。",
+        "delay": 6000
+      },
+      {
+        "text": "でも、私は絵とか小説とか、かけないし……謎解きは好きだけど、作れるわけじゃない。<br>だから一般参加で楽しもう！って思ってたんですけど……",
+        "delay": 5000
+      },
+      {
+        "text": "私が第四境界を好きだって思う気持ち……なんでもいいから形にすればよかったな……！",
+        "delay": 4000
+      },
+      {
+        "text": "あーーーーー悔しいな～～～～～！！！！！<br>この世界の人たち、みんな、こんな気持ちだったんだ～～～～～！！！！！",
+        "delay": 4000
+      },
+      {
+        "text": "この世界にいた人たちを見て、そう思ったんです。<br>あはは……なんだか、私がこの世界に引き寄せられた理由がわかっちゃいましたね。",
+        "delay": 4000
+      },
+      {
+        "text": "……うん、私、創作がしたい。",
+        "delay": 3000
+      },
+      {
+        "text": "この気持ちを私の中だけに留めておけない！！<br>最初はちょっと怖い思いもしたけれど……こんな不思議な体験、私くらいしかしたことないんじゃないかな！？このドキドキを…いろんな人に共有したい！",
+        "delay": 4000
+      },
+      {
+        "text": "今回は間に合わなかったけど……次こそ絶対、サークル参加するっ！！",
+        "delay": 2000
+      },
+      {
+        "text": "そうだ。あなたも、このあとD:IV_visionに遊びに行くんですよね！",
+        "delay": 4000
+      },
+      {
+        "text": "……それなら、きっとまた会える気がする。だから、さようならは言いません。",
+        "delay": 4000
+      },
+      {
+        "text": "ありがとう、……またね！",
+        "delay": 3000
+      }
+    ],
+    "phases": ["8-1"],
+    "requiredFlags": ["phase7_done"],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": ["phase8-1_clear"],
+    "clearFlags": ["phase7_done", "phase8_badEnding_entry"]
+  },
+  {
+    "keyword": "__phase8_1_system",
+    "response": [
+      {
+        "text": "[center]ー救出成功ー[/center]<br>次に会うときは参加者として<br><br>https://d4-vision-oparation.netlify.app/",
+        "delay": 2000
+      },
+      {
+        "image": "data/img/yUlFzgp5tXJU.png",
+        "delay": 2000
+      }
+    ],
+    "phases": ["8-1"],
+    "requiredFlags": ["phase8-1_clear"],
+    "repeatable": false,
+    "type": "system",
+    "setFlags": [],
+    "clearFlags": [],
+    "lockInput": true
+  },
+  {
+    "keywords": "入って,はいって,入る,はいる,入れ,はいれ,出て,でて,出る,でる,中へ,なかへ,出口,でぐち,行って,いって,直進,ちょくしん,進め,すすむ,進んで,すすんで,脱出して,だっしゅつして,くぐって",
+    "response": [
+      {
+        "text": "は、入るの…！？ここに…！？",
+        "delay": 2000
+      },
+      {
+        "text": "この中に入るのは、流石の私でもちょっと怖いな、というか……",
+        "delay": 2000
+      },
+      {
+        "text": "……本当に、いいんだよね……？",
+        "delay": 2000
+      }
+    ],
+    "phases": ["8-2"],
+    "requiredFlags": ["phase7_done"],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": ["phase8_badEnding_entry"],
+    "clearFlags": []
+  },
+  {
+    "keywords": "いい,入って,はいって,入る,はいる,入れ,はいれ,出て,でて,出る,でる,中へ,なかへ,出口,でぐち,行って,いって,直進,ちょくしん,進め,すすむ,進んで,すすんで,脱出して,だっしゅつして,くぐって",
+    "response": [
+      {
+        "text": "……わかりました。",
+        "delay": 2000
+      },
+      {
+        "text": "今まで助けてくれたあなたが言うんだったら、きっと間違いないですよね",
+        "delay": 2000
+      },
+      {
+        "text": "あなたのことを信じて、行きますね…！",
+        "delay": 2000
+      },
+      {
+        "text": "……",
+        "delay": 2000
+      },
+      {
+        "text": "……きゃっ！？　なにこれ……いやっ、つかまれてる、や！やめて！！れ！や！！",
+        "delay": 2000
+      },
+      {
+        "text": "たすたさけ？て、こわいこ、！こわ、いや、ぃ縺ゅ≠縺ゅ＞縺｢",
+        "delay": 2000
+      },
+      {
+        "text": "縺ゅ≠縺ゅ＞縺｢��≠縺ｵ縺√�縺√ｒ��↓縺奇ｽゅ��悶⊂縺ｼ繝ｴ縺ｶ縺医♀縺�⊂縺ゑｽ薙△縺�℃��ｽゑｽ暦ｽ厄ｽ励ｊ縺ｯ縺ゑｽ難ｽ�ｽ�ｽ�ｽ茨ｽ�ｽ奇ｽ�ｽ後ｒ�暦ｽ呻ｽゑｽ搾ｽ壹ｓ�假ｽ�縺ゅ≠縺ゅ＞縺｢��≠縺ｵ縺√�縺√ｒ��↓縺奇ｽゅ��悶⊂縺ｼ繝ｴ縺ｶ縺医♀縺�⊂縺ゑｽ薙△縺�℃��ｽゑｽ暦ｽ厄ｽ励ｊ縺ｯ縺ゑｽ難ｽ�ｽ�ｽ�ｽ茨ｽ�ｽ奇ｽ�ｽ後ｒ�暦ｽ呻ｽゑｽ搾ｽ壹ｓ�假ｽ�縺ゅ≠縺ゅ＞縺｢��≠縺ｵ縺√�縺√ｒ��↓縺奇ｽゅ��悶⊂縺ｼ繝ｴ縺ｶ縺医♀縺�⊂縺ゑｽ薙△縺�℃��ｽゑｽ暦ｽ厄ｽ励ｊ縺ｯ縺ゑｽ難ｽ�ｽ�ｽ�ｽ茨ｽ�ｽ奇ｽ�ｽ後ｒ�暦ｽ呻ｽゑｽ搾ｽ壹ｓ�假ｽ�縺ゅ≠縺ゅ＞縺｢��≠縺ｵ縺√�縺√ｒ��↓縺奇ｽゅ��悶⊂縺ｼ繝ｴ縺ｶ縺医♀縺�⊂縺ゑｽ薙△縺�℃��ｽゑｽ暦ｽ厄ｽ励ｊ縺ｯ縺ゑｽ難ｽ�ｽ�ｽ�ｽ茨ｽ�ｽ奇ｽ�ｽ後ｒ�暦ｽ呻ｽゑｽ搾ｽ壹ｓ�假ｽ�",
+        "delay": 1000,
+        "specialClass": "alice-alert"
+      },
+      {
+        "text": "縺ゅ≠縺ゅ＞縺｢��≠縺ｵ縺√�縺√ｒ��↓縺奇ｽゅ��悶⊂縺ｼ繝ｴ縺ｶ縺医♀縺�⊂縺ゑｽ薙△縺�℃��ｽゑｽ暦ｽ厄ｽ励ｊ縺ｯ縺ゑｽ難ｽ�ｽ�ｽ�ｽ茨ｽ�ｽ奇ｽ�ｽ後ｒ�暦ｽ呻ｽゑｽ搾ｽ壹ｓ�假ｽ�縺ゅ≠縺ゅ＞縺｢��≠縺ｵ縺√�縺√ｒ��↓縺奇ｽゅ��悶⊂縺ｼ繝ｴ縺ｶ縺医♀縺�⊂縺ゑｽ薙△縺�℃��ｽゑｽ暦ｽ厄ｽ励ｊ縺ｯ縺ゑｽ難ｽ�ｽ�ｽ�ｽ茨ｽ�ｽ奇ｽ�ｽ後ｒ�暦ｽ呻ｽゑｽ搾ｽ壹ｓ�假ｽ�縺ゅ≠縺ゅ＞縺｢��≠縺ｵ縺√�縺√ｒ��↓縺奇ｽゅ��悶⊂縺ｼ繝ｴ縺ｶ縺医♀縺�⊂縺ゑｽ薙△縺�℃��ｽゑｽ暦ｽ厄ｽ励ｊ縺ｯ縺ゑｽ難ｽ�ｽ�ｽ�ｽ茨ｽ�ｽ奇ｽ�ｽ後ｒ�暦ｽ呻ｽゑｽ搾ｽ壹ｓ�假ｽ�縺ゅ≠縺ゅ＞縺｢��≠縺ｵ縺√�縺√ｒ��↓縺奇ｽゅ��悶⊂縺ｼ繝ｴ縺ｶ縺医♀縺�⊂縺ゑｽ薙△縺�℃��ｽゑｽ暦ｽ厄ｽ励ｊ縺ｯ縺ゑｽ難ｽ�ｽ�ｽ�ｽ茨ｽ�ｽ奇ｽ�ｽ後ｒ�暦ｽ呻ｽゑｽ搾ｽ壹ｓ�假ｽ�",
+        "delay": 500,
+        "specialClass": "alice-alert"
+      },
+      {
+        "text": "縺ゅ≠縺ゅ＞縺｢��≠縺ｵ縺√�縺√ｒ��↓縺奇ｽゅ��悶⊂縺ｼ繝ｴ縺ｶ縺医♀縺�⊂縺ゑｽ薙△縺�℃��ｽゑｽ暦ｽ厄ｽ励ｊ縺ｯ縺ゑｽ難ｽ�ｽ�ｽ�ｽ茨ｽ�ｽ奇ｽ�ｽ後ｒ�暦ｽ呻ｽゑｽ搾ｽ壹ｓ�假ｽ�縺ゅ≠縺ゅ＞縺｢��≠縺ｵ縺√�縺√ｒ��↓縺奇ｽゅ��悶⊂縺ｼ繝ｴ縺ｶ縺医♀縺�⊂縺ゑｽ薙△縺�℃��ｽゑｽ暦ｽ厄ｽ励ｊ縺ｯ縺ゑｽ難ｽ�ｽ�ｽ�ｽ茨ｽ�ｽ奇ｽ�ｽ後ｒ�暦ｽ呻ｽゑｽ搾ｽ壹ｓ�假ｽ�縺ゅ≠縺ゅ＞縺｢��≠縺ｵ縺√�縺√ｒ��↓縺奇ｽゅ��悶⊂縺ｼ繝ｴ縺ｶ縺医♀縺�⊂縺ゑｽ薙△縺�℃��ｽゑｽ暦ｽ厄ｽ励ｊ縺ｯ縺ゑｽ難ｽ�ｽ�ｽ�ｽ茨ｽ�ｽ奇ｽ�ｽ後ｒ�暦ｽ呻ｽゑｽ搾ｽ壹ｓ�假ｽ�縺ゅ≠縺ゅ＞縺｢��≠縺ｵ縺√�縺√ｒ��↓縺奇ｽゅ��悶⊂縺ｼ繝ｴ縺ｶ縺医♀縺�⊂縺ゑｽ薙△縺�℃��ｽゑｽ暦ｽ厄ｽ励ｊ縺ｯ縺ゑｽ難ｽ�ｽ�ｽ�ｽ茨ｽ�ｽ奇ｽ�ｽ後ｒ�暦ｽ呻ｽゑｽ搾ｽ壹ｓ�假ｽ�",
+        "delay": 500,
+        "specialClass": "alice-alert"
+      }
+    ],
+    "phases": ["8-2"],
+    "requiredFlags": ["phase8_badEnding_entry"],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": ["phase8_badEnding"],
+    "clearFlags": ["phase7_done", "phase8_badEnding_entry"]
+  },
+  {
+    "keyword": "__phase8_bad_system",
+    "response": [
+      {
+        "text": "[center]ー救出失敗ー[/center]<br>お疲れ様でした。あと一歩のところでしたが、アリスを救うことはできなかったみたいですね。<br><br>もう一度この物語の扉を開こうとするあなたのために、耳よりな情報でございます。<br><br>１．アナウンスが聞こえてきたタイミングで『拍手』をすると、<br>すぐに他のサークルを見に行くことができるようになります。<br><br>２．アリスから「どこに行きましょうか」と問われた際、『運営本部』に行けば、それぞれのサークルでもらったものを回収することが可能です。<br><br>以上、ぜひご活用くださいませ。",
+        "delay": 2000
+      },
+      {
+        "image": "data/img/QgBoUTVdhMVj.jpg",
+        "delay": 2000
+      },
+      {
+        "text": "<button class='retry-btn' onclick='location.reload()'>この扉に再接続する</button>",
+        "delay": 2000
+      }
+    ],
+    "phases": ["8-2"],
+    "requiredFlags": ["phase8_badEnding"],
+    "repeatable": false,
+    "type": "system",
+    "setFlags": [],
+    "clearFlags": [],
+    "lockInput": true
+  },
+  {
+    "keywords": "ご飯,ごはん,飯,めし,食事,しょくじ,食べ物,たべもの,料理,りょうり,飲物,のみもの,飲み物,のみもの,飲料,いんりょう,ドリンク,どりんく,汁,しる,スープ,すーぷ,茶,ちゃ,お茶,おちゃ,水,みず,酒,さけ,お酒,おさけ",
+    "response": [
+      {
+        "text": "お腹すいたなあ…。あ、でも、この世界で何か食べちゃったらまずいかも！？",
+        "delay": 2000
+      },
+      {
+        "text": "黄泉の国で食べ物を口にすると、もう二度と戻れないっていう話、知ってます？",
+        "delay": 2000
+      },
+      {
+        "text": "ヨモツヘグイっていうんですけど、そういうの……わたし、好きなんですよねー…怖いけど…わくわくが抑えられない気持ちもある…",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "融解班,ゆうかいはん,交錯員,こうさくいん,第四境界,だいよんきょうかい,D4KK,ディーフォーケーケー,でぃーふぉーけーけー",
+    "response": [
+      {
+        "text": "私はまだまだ新参者なんですけど…",
+        "delay": 2000
+      },
+      {
+        "text": "もともとオカルトが好きだったので、偶然作品を知って、それから沼にずぶずぶと…",
+        "delay": 2000
+      },
+      {
+        "text": "同じ沼に浸かった同士の集まりに…と思ってたんですけど",
+        "delay": 2000
+      },
+      {
+        "text": "まさかこんなことになるなんて、たはは…",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "D:IV_vision,ディヴィジョン,ディビジョン",
+    "response": [
+      {
+        "text": "ファンが集まってイベント開催だなんて、とっても素敵な話ですよね！",
+        "delay": 2000
+      },
+      {
+        "text": "あぁ、私も普通に参加したかったなぁ…",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "Project:;COLD,プロジェクトコールド,ぷろじぇくとこーるど,プロコ,ぷろこ",
+    "response": [
+      {
+        "text": "私、プロコのことは動画サイトで話題になってて知ったんです！",
+        "delay": 2000
+      },
+      {
+        "text": "願わくば最初から知りたかったなぁ…とか考えちゃったりして",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "銀の弾丸,ぎんのだんがん",
+    "response": [
+      {
+        "text": "銀の弾丸、設定も演出もかっこいいですよね。",
+        "delay": 1400
+      },
+      {
+        "text": "自分の過去に銀の弾丸を撃ち込めるのだとしたら…あなたなら、どこに撃ち込みますか？",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "ちゃっぴー",
+    "response": [
+      {
+        "text": "あんなに有用ないいね欄なかなかないですよね。もう一度見たいな～",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "顕現,けんげん",
+    "response": [
+      {
+        "text": "顕現といえば…あの動画ですよね？本当に怖かったなぁ…",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "不可逆展,ふかぎゃくてん",
+    "response": [
+      {
+        "text": "不可逆展…行きたかったな…当時はまだ高校生だったので、親が許してくれなくて行けなかったんです…第２回を希望します！",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "財布,さいふ",
+    "response": [
+      {
+        "text": "人のお財布の中身を見て謎解きをする…だなんて斬新でしたよね！",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "給与明細,きゅうよめいさい",
+    "response": [
+      {
+        "text": "人の〇〇って当初発売されましたね。自宅に届いた時は『なんてもの売り出してるんだー！？』ってとってもびっくりしました",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "日記,にっき",
+    "response": [
+      {
+        "text": "人の交換日記…私としては一番最初のフリマアプリに出ているときに見つけたかった…！あれ見つけられる人ってなんですか！驚異の謎解き力ですよ～！",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "カレンダー,かれんだー",
+    "response": [
+      {
+        "text": "人のカレンダー、SNSや公式サイトを追いかけてると、第四境界のコンテンツだなってニコニコしちゃいますね！",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "ポケットティッシュ,ぽけっとてぃっしゅ,ジロー",
+    "response": [
+      {
+        "text": "うっ……ジローだけ手に入れられなくて何回もガチャガチャした思い出…。<br>空き家のティッシュは祖父が生贄とか座敷童的なものなのかと考察が止まりませんでした",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "かがみの,特殊少年更生施設",
+    "response": [
+      {
+        "text": "アルターカーニバルが終わる直前に発表されて、プロコの一環かと思いましたよ！",
+        "delay": 2000
+      },
+      {
+        "text": "一つ一つページを探していくごとに、彼らがどんな人か、施設がどんなものか分かっていく。ワクワクとゾワゾワの両立でしたね！",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "表現祭,ひょうげんさい",
+    "response": [
+      {
+        "text": "まさかリアルかがみのができるだなんて…まさに「日常を侵蝕している」ですね！",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "幽拐,エレベーター,えれべーたー,食堂,しょくどう",
+    "response": [
+      {
+        "text": "メッセージを送ってつむぎちゃんを脱出の手助けをするだなんて斬新でしたよね！",
+        "delay": 2000
+      },
+      {
+        "text": "今では私がつむぎちゃんの立場になっちゃいましたけど…",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "つむぎ,たちばな",
+    "response": [
+      {
+        "text": "つむぎちゃんかわいいですよね～！でも幽拐食堂のつむぎちゃん、普通にご飯食べてたりしててびっくりしたな…",
+        "delay": 2000
+      },
+      {
+        "text": "意外とドンとしてて、むしろかっこいいかも…",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "Ds試験",
+    "response": [
+      {
+        "text": "難しかったー！あれノーヒントで解ける人たちどうなってるんですか！",
+        "delay": 2000
+      },
+      {
+        "text": "AMGYにはとりあえずコーヒー豆をずっと数えててもらいましょう！",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "交錯≠少女,交錯少女,こうさくしょうじょ,CLOSSOVER GIRL",
+    "response": [
+      {
+        "text": "交錯≠少女、久しぶりに一致団結しての謎解きで楽しかったです！",
+        "delay": 2000
+      },
+      {
+        "text": "「お友達に一緒に東京に行こう！」と誘ったんですけど…断られちゃいました…",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "堺かな,金澤かな",
+    "response": [
+      {
+        "text": "あぁ、かなちゃん可愛かったな～、もう一度会いたい…",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "残置物,ざんちぶつ,ロッカー,ろっかー",
+    "response": [
+      {
+        "text": "薄暗いロッカー、そこに閉じ込められたいわく……でもロッカーを全て開けた先にあったものは……",
+        "delay": 2000
+      },
+      {
+        "text": "おっと。そのなかに何があったかは内緒にしときましょう┗( ＾ω＾ )┛",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "事故物件,じこぶっけん,バケツ",
+    "response": [
+      {
+        "text": "現地ならではの怖さってありますよね……",
+        "delay": 2000
+      },
+      {
+        "text": "画面から飛びだしてくるような怖さも部屋の中で何かが起こる怖さもたまらない！",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "READY TO STORY,ビール,コーラ",
+    "response": [
+      {
+        "text": "私はまだ未成年なのでクラフトビールは注文できないので、クラフトコーラだけでも買いたいです…。一体どんな謎解きなんでしょう…？",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "AMGY,アンジー",
+    "response": [
+      {
+        "text": "アンジーちゃん、おっちょこちょいで可愛いですよね～。私の推しです！",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "東京侵蝕,とうきょうしんしょく",
+    "response": [
+      {
+        "text": "東京侵蝕、楽しかったなぁ…私と同じものを好きな人があ～～んなにいるだなんて！感動しちゃいました！",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "名刺",
+    "response": [
+      {
+        "text": "藤澤総監督の名刺、貰いましたか？！",
+        "delay": 2000
+      },
+      {
+        "text": "裏面の謎解き、監督が簡単だって言うもんだから、解けなかったらどうしよう…って緊張しちゃいました",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "幽霊,ゆうれい",
+    "response": [
+      {
+        "text": "私、幽霊見たことないんですよね。以前心霊写真を見るイベントに行ったんですが…",
+        "delay": 2000
+      },
+      {
+        "text": "どこに幽霊がいるのか全然わからなかったんですよ…。残念です！",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "異世界転生,いせかいてんせい",
+    "response": [
+      {
+        "text": "転生？！私生きてますよね？！",
+        "delay": 1400
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "ラップ,RAP,歌って,うたって",
+    "response": [
+      {
+        "text": "名前はアリス テンションナイス🥳<br>ときめく作品 ハンティング💘<br><br>ざわめく空気 ここで運命交差？<br>怖くて泣きそう 急転直下<br><br>境界上に浮かぶ 現在地<br>あなたの言葉で突破する 限界値<br>迷ってたはずが 今は確信💡<br>むしろ燃えてくるね 探究心🔥",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "グッズ,アクスタ,缶バッジ",
+    "response": [
+      {
+        "text": "もう置き場所がないのに買うのをやめられない…。",
+        "delay": 2000
+      },
+      {
+        "text": "オタクなるもの、買わない後悔より買う後悔！！！",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "連絡,繋がる",
+    "response": [
+      {
+        "text": "ほんとに不思議なんですけど、このチャットだけは動いてて…あなたと繋がってよかった！",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "怖い",
+    "response": [
+      {
+        "text": "怖いけど、この雰囲気…どこか知ってる感じもする…",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "怖い",
+    "response": [
+      {
+        "text": "最初は怖かったんですけど…。私にしかできないことかも、って思うと頑張れます！あなたもいてくれますし！",
+        "delay": 2000
+      }
+    ],
+    "phases": ["5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "大丈夫,だいじょうぶ,無事",
+    "response": [
+      {
+        "text": "身体は無事です！でも心はちょっとドキドキしてるかも…。それが楽しくなってきてもいたり…？",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "音,声",
+    "response": [
+      {
+        "text": "たくさんの人が喋っている…はずなんですが、不思議と喋っている内容は聞き取れないんですよね…",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "混雑",
+    "response": [
+      {
+        "text": "まっくろな人影がスペースや通路にたくさんいますよ。なんだかちょっと怖いです…。",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "混雑",
+    "response": [
+      {
+        "text": "人影…さっきよりも数が少なくなっているような…？",
+        "delay": 2000
+      }
+    ],
+    "phases": ["5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "ヒント",
+    "response": [
+      {
+        "text": "え～ん、ヒントなんて私が欲しいくらいですよーっ！",
+        "delay": 2000
+      },
+      {
+        "text": "うう……運営本部とかに聞いたら教えてもらえないんでしょうか……。",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "紙",
+    "response": [
+      {
+        "text": "電子もいいけどやっぱ紙の手触りが好きですね。えへへ、私が好きな紙は…",
+        "delay": 2000
+      },
+      {
+        "text": "あっ、何か紙とか落ちてないかって話ですか？！すみません…見当たらないです。",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "好きです,付き合おう,付き合って,告白,結婚,プロポーズ",
+    "response": [
+      {
+        "text": "返事はこの戦いが終わったら………ですかね！",
+        "delay": 2000
+      },
+      {
+        "text": "って自分で死亡フラグ立ててどうするの私？！",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "得意,特技",
+    "response": [
+      {
+        "text": "得意なことですか？同人誌の表紙買いですかね～！嗅覚と勢いには自信があります！",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "苦手",
+    "response": [
+      {
+        "text": "計算とか？あはは つまるところ貯金、ですかね……",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "時間,何時",
+    "response": [
+      {
+        "text": "今、何時なんだろう…。せっかく1時間前から開場待機してたのに～！涙",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "セーブ,保存,中断",
+    "response": [
+      {
+        "text": "そんなことできません！今を生きてください！",
+        "delay": 1400
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "リセット,やり直し,やりなおし",
+    "response": [
+      {
+        "text": "え、私の人生を！？Σ(ﾟдﾟlll) いやです！！",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "おはよう",
+    "response": [
+      {
+        "text": "おはようございます！気持ちがいい朝……なんですかね？！ここじゃ時間がわからないです。助けてください！",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "おやすみ",
+    "response": [
+      {
+        "text": "おやすみなさい！",
+        "delay": 2000
+      },
+      {
+        "text": "…って寝ないでください！あなたしか頼れないんです！",
+        "delay": 2000
+      },
+      {
+        "text": "カンカンカン！！！起きて！！！朝だよ！！！夜かもしれないですけど！",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "こんにちは",
+    "response": [
+      {
+        "text": "こんにちは！いつだって元気な挨拶が大事ですよね",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "こんばんは",
+    "response": [
+      {
+        "text": "こんばんは！今、夜なんですか？ここ建物内で、外の様子がわからなくて…",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "夢,現実",
+    "response": [
+      {
+        "text": "夢にしては現実味があるし、現実にしては夢っぽすぎるような…。",
+        "delay": 2000
+      },
+      {
+        "text": "これが『現実と仮想の間の曖昧な領域』ってコト！？",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "ジャンプ",
+    "response": [
+      {
+        "text": "えっ！？はい！その場で…ジャンプ！",
+        "delay": 2000
+      },
+      {
+        "text": "…………意味ありました！？隠しコマンド的な…！？",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "好きな色",
+    "response": [
+      {
+        "text": "白と黒の境界線にある灰色。…って言いたいですけど、ほんとは水色です！",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "好感度",
+    "response": [
+      {
+        "text": "ピロン♪(好感度アップ↑↑)",
+        "delay": 800
+      },
+      {
+        "text": "嘘です！ そういうシステムはないです！",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": ["askLike1"],
+    "clearFlags": []
+  },
+  {
+    "keywords": "好感度",
+    "response": [
+      {
+        "text": "え～？知りたいですか？そうですねえ…。なかなかいい調子かも？",
+        "delay": 2000
+      }
+    ],
+    "phases": ["4", "5"],
+    "requiredFlags": ["askLike1"],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": ["askLike2"],
+    "clearFlags": ["askLike1"]
+  },
+  {
+    "keywords": "好感度",
+    "response": [
+      {
+        "text": "ここまで助けてくれていますし、好感度MAX……だったりして？",
+        "delay": 2000
+      }
+    ],
+    "phases": ["5", "6"],
+    "requiredFlags": ["askLike2"],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": ["askLike2"]
+  },
+  {
+    "keywords": "本名,名前",
+    "response": [
+      {
+        "text": "アリス、っていいます。あ、もちろんハンドルネームですよ",
+        "delay": 2000
+      },
+      {
+        "text": "……本名教えるわけないじゃないですか！",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": ["askName1"],
+    "clearFlags": []
+  },
+  {
+    "keywords": "本名,名前",
+    "response": [
+      {
+        "text": "えーっと……そんなに知りたいですか？私の本名……",
+        "delay": 2000
+      },
+      {
+        "text": "もう少し仲良くなったら、考えてあげますけど……！",
+        "delay": 2000
+      }
+    ],
+    "phases": ["4", "5"],
+    "requiredFlags": ["askName1"],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": ["askName2"],
+    "clearFlags": ["askName1"]
+  },
+  {
+    "keywords": "本名,名前",
+    "response": [
+      {
+        "text": "本名は、榊原 有栖です。アリスってハンドルネームは、名前からそのまま取ってるんですよね。",
+        "delay": 2000
+      },
+      {
+        "text": "ここまで私を助けようとしてくれる人になら、いいかなって……",
+        "delay": 2000
+      },
+      {
+        "text": "あ、ネットに書き込むのはやめてくださいねっ！？",
+        "delay": 2000
+      }
+    ],
+    "phases": ["5", "6"],
+    "requiredFlags": ["askName2"],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": ["askName2"]
+  },
+  {
+    "keywords": "鏡",
+    "response": [
+      {
+        "text": "ここにはなさそうですけど、今鏡を見るのはちょっと怖いかも。",
+        "delay": 2000
+      },
+      {
+        "text": "見えちゃいけないものが見えたりなんてことがあったら…SAN値が…",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "髪,ヘア",
+    "response": [
+      {
+        "text": "リアル即売会だと気合い入れるんですけどね！直前に美容室いったりしますよね～",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "服,コーデ,ファッション",
+    "response": [
+      {
+        "text": "普段はちゃんとしてるんですけど……今は、パジャマ、ですね……。",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "しりとり",
+    "response": [
+      {
+        "text": "いいですよ！せっかくだからオカルト縛りでやりましょう。じゃあ私から！",
+        "delay": 2000
+      },
+      {
+        "text": "きさらぎ駅",
+        "delay": 600
+      },
+      {
+        "text": "狐憑き",
+        "delay": 600
+      },
+      {
+        "text": "吸血鬼",
+        "delay": 600
+      },
+      {
+        "text": "…ってすみません、一人で盛り上がっちゃいました！<br>第四境界サーバーのしりとりレベリング部屋でのクセで…",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "なぞなぞ",
+    "response": [
+      {
+        "text": "いいですよ！出題してあげましょう。 ",
+        "delay": 1000
+      },
+      {
+        "text": "Q：心拍数が上がるのに、寿命は伸びるものってな〜んだ？",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": true,
+    "type": "text",
+    "setFlags": ["nazonazo"],
+    "clearFlags": []
+  },
+  {
+    "keywords": "自撮り,じどり,地鶏,顔",
+    "response": [
+      {
+        "text": "え！？じ、自撮りですか！？",
+        "delay": 2000
+      },
+      {
+        "text": "うう。今日は一日、家にいるだけだと思って部屋着のままなんですよね…でも、必要なら…！",
+        "delay": 2000
+      },
+      {
+        "image": "data/img/qi8iGmQCYfnk.jpg",
+        "delay": 4000
+      },
+      {
+        "text": "…これ、脱出に役立てるために本当に必要なんですよね…？変なことに使っちゃダメですよ？",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "image",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "オカルト,オタク,都市伝説,としでんせつ",
+    "response": [
+      {
+        "text": "高校生のときに、動画サイトで都市伝説系のチャンネルにハマってた時期があるんです。<br>そのときからオカルトや都市伝説に興味を持って…こうして見事にオタクになってしまいました。あはは…",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "何歳,なんさい,年齢,いくつ,学生,大人",
+    "response": [
+      {
+        "text": "大学1年生です！",
+        "delay": 2000
+      },
+      {
+        "text": "大学生になって、時間もお金も自由に管理ができるようになったおかげで、遂にこうしてイベントにも参加！",
+        "delay": 2000
+      },
+      {
+        "text": "…だったのに、まさかこんなことになるとは思いませんでしたが…",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "どこ住み,どこすみ,てかLINE,てかライン,てかＬＩＮＥ,住所,地域",
+    "response": [
+      {
+        "text": "す、住んでる場所ですか！？ノーコメント！ノーコメントです！",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "ペン",
+    "response": [
+      {
+        "text": "はい、ボールペンを持っています。",
+        "delay": 2000
+      },
+      {
+        "text": "この書き味の滑らかさ……やっぱり、ボールペンはジェットストリームですね！！",
+        "delay": 2000
+      },
+      {
+        "text": "といっても、今はらくがきくらいにしか使えませんが……何か書き込むタイミングがあれば、言ってください！",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "スマホ,スマートフォン",
+    "response": [
+      {
+        "text": "今持っているのは、私が普段から使っているスマホです！",
+        "delay": 2000
+      },
+      {
+        "text": "他の持ち物は、いつの間にか手元にありましたけど…",
+        "delay": 2000
+      },
+      {
+        "text": "スマホがあるおかげであなたと連絡が取れてるんですよね……本当によかった…！",
+        "delay": 2000
+      },
+      {
+        "text": "何か見つけたら、メッセージで送りますね。あなたも気づいたことがあれば連絡してください！",
+        "delay": 2000
+      },
+      {
+        "text": "特に何もなければ……第四境界の話とかしてくれたら喋りますよ(｀・ω・´)ゞ",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "text",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "写真",
+    "response": [
+      {
+        "text": "写真ですね！今、会場内の写真を撮影してみるのでお待ちください！",
+        "delay": 2000
+      },
+      {
+        "image": "data/img/BgmBYmVmwSli.jpg",
+        "delay": 4000
+      },
+      {
+        "text": "……あれ？撮影はできたはずなんですが、送ると真っ黒になってしまうみたいです……。",
+        "delay": 2000
+      },
+      {
+        "text": "すみません……映るものと、映らないものがあるんですかね…？<br>他にも試してみますので、必要な情報があれば言ってください！",
+        "delay": 2000
+      }
+    ],
+    "phases": ["3", "4", "5", "6"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "image",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "お４,コアラの帝国",
+    "response": [
+      {
+        "text": "お４（コアラの帝国さん）に行けばいいんですか？わかりました！",
+        "delay": 2000
+      },
+      {
+        "text": "到着しました。机の上には頒布物が置いてあります！",
+        "delay": 6000
+      },
+      {
+        "image": "data/img/vp7Bo0HmVbXW.png",
+        "delay": 2000
+      },
+      {
+        "text": "これ…かがみのの二次創作ですよね！？",
+        "delay": 2000
+      },
+      {
+        "text": "表現祭の展示物には、イラストの中に謎が仕込まれていたりして凝ってましたよね～",
+        "delay": 2000
+      },
+      {
+        "text": "この世界でも第四境界のFAが見られるなんて、感激です。",
+        "delay": 2000
+      }
+    ],
+    "phases": ["5"],
+    "requiredFlags": [],
+    "repeatable": false,
+    "type": "image",
+    "setFlags": [],
+    "clearFlags": []
+  },
+  {
+    "keywords": "拍手,はくしゅ,パチパチ,ぱちぱち,手を叩,てをたた,クラップ,clap,Clap,CLAP",
+    "response": [
+      {
+        "text": "開始時の拍手は即売会名物ですよね！",
+        "delay": 2000
+      },
+      {
+        "text": "8888888888888",
+        "delay": 900
+      },
+      {
+        "text": "……ふう、ちょっと手が痛いです（涙）",
+        "delay": 2000
+      },
+      {
+        "text": "でも、即売会が始まるときの拍手ってちょっと憧れでした！<br>参加できて嬉しかったです♪",
+        "delay": 2000
+      },
+      {
+        "text": "って、楽しんでる場合じゃなかった…<br>そういえば会場内の地図があるので、送っておきますね！",
+        "delay": 2000
+      },
+      {
+        "image": "data/img/BLYvz9HRDej2.jpg",
+        "delay": 2000
+      },
+      {
+        "image": "data/img/eNNXaPoIvaDf.jpg",
+        "delay": 2000
+      },
+      {
+        "text": "まずはどこにいきましょうか？",
+        "delay": 2000
+      }
+    ],
+    "phases": ["4"],
+    "requiredFlags": ["phase3_done"],
+    "repeatable": false,
+    "type": "image",
+    "setFlags": ["phase4-6_done", "usedSC_p3"],
+    "clearFlags": ["phase3_done"],
+    "nextPhase": "5"
+  },
+  {
+    "keywords": "本部,ほんぶ,運営,うんえい",
+    "response": [
+      {
+        "text": "サークル運営本部…ですか？<br>即売会を運営している人たちのスペースですね。わかりました！",
+        "delay": 2000
+      },
+      {
+        "text": "到着しました！黒い人影が立ってますが…あれ、私に何か差し出してる？",
+        "delay": 6000
+      },
+      {
+        "text": "メモ用紙と、同人誌やノベルティを渡されました！<br>「loco」<br>「accent」<br>「fine」<br>と書いてあります。<br>あとは、チロルチョコをもらいました！",
+        "delay": 2000
+      },
+      {
+        "text": "落とし物…って聞こえたけど、私、こんなもの落としたっけ…？",
+        "delay": 2000
+      }
+    ],
+    "phases": ["5"],
+    "requiredFlags": ["usedSC_p3"],
+    "repeatable": false,
+    "type": "text",
+    "clearAllFlags": true,
+    "setFlags": ["phase5-C-4_done", "phase5_99perDone", "usedSC_p5"],
+    "clearFlags": [],
+    "nextPhase": "6"
+  }
+]

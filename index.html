@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-Q8ZKSTGKEC"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-Q8ZKSTGKEC");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>幽廻即売会</title>
+    <link
+      rel="stylesheet"
+      href="css/style.css"
+      onload="this.media='all'"
+      media="print"
+    />
+    <link rel="icon" href="data/img/favicon.ico" />
+  </head>
+  <body>
+    <div id="chat-container">
+      <!-- ヘッダー -->
+      <div id="chat-header">
+        <div id="alice-icon"></div>
+        <div id="alice-info">
+          <div id="alice-name">繧｢繝ｪ繧ｹ</div>
+          <div id="alice-status" class="online">オンライン</div>
+        </div>
+      </div>
+
+      <!-- チャットログ部 -->
+      <div id="chat-log"></div>
+      <button id="new-message-btn" style="display: none">
+        新規メッセージがあります
+      </button>
+
+      <!-- メッセージ入力部 -->
+      <div id="chat-input-container">
+        <input type="text" id="textInput" placeholder="メッセージを入力..." />
+        <button id="sendButton">送信</button>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
