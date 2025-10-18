@@ -272,6 +272,10 @@
       {
         "text": "どこかのサークルにいきたいときは、スペース番号を教えてくれれば向かいます！",
         "delay": 2000
+      },
+      {
+        "text": "……でも、情報が少ないうちはむやみに歩き回るべきではないですね。もう少しこの場所のことを知ってから移動しましょうか。",
+        "delay": 2000
       }
     ],
     "phases": ["4"],
@@ -356,11 +360,11 @@
       }
     ],
     "phases": ["4"],
-    "requiredFlags": ["phase4-2_done", "phase4-3_done"],
+    "requiredFlags": ["phase3_done", "phase4-2_done"],
     "repeatable": false,
     "type": "text",
-    "setFlags": ["phase4-4_done"],
-    "clearFlags": ["phase4-2_done", "phase4-3_done"]
+    "setFlags": ["phase4-4and5_done"],
+    "clearFlags": ["phase4-2_done"]
   },
   {
     "keywords": "カタログ,かたろぐ",
@@ -399,11 +403,11 @@
       }
     ],
     "phases": ["4"],
-    "requiredFlags": ["phase3_done", "phase4-3_done"],
+    "requiredFlags": ["phase3_done"],
     "repeatable": false,
     "type": "image",
-    "setFlags": ["phase4-5_done"],
-    "clearFlags": ["phase4-3_done"]
+    "setFlags": ["phase4-4and5_done"],
+    "clearFlags": ["phase3_done"]
   },
   {
     "keywords": "付箋,ふせん,フセン,ポストイット,post-it,Post-it,POST-IT,メモ,めも,Memo,Ｍｅｍｏ",
@@ -461,138 +465,12 @@
         "delay": 2000
       }
     ],
-    "phases": ["4"],
-    "requiredFlags": ["phase4-4_done", "phase4-5_done"],
+    "phases": ["4", "4-2"],
+    "requiredFlags": ["phase4-4and5_done"],
     "repeatable": false,
     "type": "image",
     "setFlags": ["phase4-6_done"],
-    "clearFlags": ["phase3_done", "phase4-4_done", "phase4-5_done"]
-  },
-  {
-    "keywords": "付箋,ふせん,フセン,ポストイット,post-it,Post-it,POST-IT,メモ,めも,Memo,Ｍｅｍｏ",
-    "response": [
-      {
-        "text": "付箋のページですね！見てみるのでちょっとお待ちください…",
-        "delay": 2000
-      },
-      {
-        "text": "こんな記事が載っていました！",
-        "delay": 2000
-      },
-      {
-        "image": "data/img/T3c1FE7iGW49.jpg",
-        "delay": 2000
-      },
-      {
-        "text": "あ……メモがはさまっていました！追加で写真を送りますね",
-        "delay": 2000
-      },
-      {
-        "image": "data/img/XZps1rgPIN8l.jpg",
-        "delay": 2000
-      },
-      {
-        "text": "……こ、故人……？あの世への持ち物……。か、カタログ……って、もしかして、今、私が持ってる……！？",
-        "delay": 2000
-      },
-      {
-        "text": "そういえば、この場所に来てから、腕にリストバンドが巻かれていました。すごくきつくて、取れないんですよね…",
-        "delay": 2000
-      },
-      {
-        "text": "さっき出口を通った時、さらにきつくなったような気がして…まるでこの世界に縛り付けるみたいに…",
-        "delay": 2000
-      },
-      {
-        "text": "……もしかしてここ、異世界じゃなくて、死後の世界…！？",
-        "delay": 2000
-      },
-      {
-        "text": "例えば、悔いを残したまま死んでしまった人たちの気持ちが集まってできた場所だったり……。",
-        "delay": 2000
-      },
-      {
-        "text": "もしそうなら…未練を晴らしてあげれば、みなさん天国へ行けたり…しないですかね？",
-        "delay": 2000
-      },
-      {
-        "text": "うん……やらないより、やってみましょう！それに、どうせならこの即売会を楽しみたいです！",
-        "delay": 2000
-      },
-      {
-        "text": "それじゃあ、まずはどこのサークルに行きましょうか？",
-        "delay": 2000
-      }
-    ],
-    "phases": ["4"],
-    "requiredFlags": ["phase4-4_done"],
-    "repeatable": false,
-    "type": "image",
-    "setFlags": ["phase4-6_done"],
-    "clearFlags": ["phase3_done", "phase4-4_done"]
-  },
-  {
-    "keywords": "付箋,ふせん,フセン,ポストイット,post-it,Post-it,POST-IT,メモ,めも,Memo,Ｍｅｍｏ",
-    "response": [
-      {
-        "text": "付箋のページですね！見てみるのでちょっとお待ちください…",
-        "delay": 2000
-      },
-      {
-        "text": "こんな記事が載っていました！",
-        "delay": 2000
-      },
-      {
-        "image": "data/img/T3c1FE7iGW49.jpg",
-        "delay": 2000
-      },
-      {
-        "text": "あ……メモがはさまっていました！追加で写真を送りますね",
-        "delay": 2000
-      },
-      {
-        "image": "data/img/XZps1rgPIN8l.jpg",
-        "delay": 2000
-      },
-      {
-        "text": "……こ、故人……？あの世への持ち物……。か、カタログ……って、もしかして、今、私が持ってる……！？",
-        "delay": 2000
-      },
-      {
-        "text": "そういえば、この場所に来てから、腕にリストバンドが巻かれていました。すごくきつくて、取れないんですよね…",
-        "delay": 2000
-      },
-      {
-        "text": "さっき出口を通った時、さらにきつくなったような気がして…まるでこの世界に縛り付けるみたいに…",
-        "delay": 2000
-      },
-      {
-        "text": "……もしかしてここ、異世界じゃなくて、死後の世界…！？",
-        "delay": 2000
-      },
-      {
-        "text": "例えば、悔いを残したまま死んでしまった人たちの気持ちが集まってできた場所だったり……。",
-        "delay": 2000
-      },
-      {
-        "text": "もしそうなら…未練を晴らしてあげれば、みなさん天国へ行けたり…しないですかね？",
-        "delay": 2000
-      },
-      {
-        "text": "うん……やらないより、やってみましょう！それに、どうせならこの即売会を楽しみたいです！",
-        "delay": 2000
-      },
-      {
-        "text": "それじゃあ、まずはどこのサークルに行きましょうか？",
-        "delay": 2000
-      }
-    ],
-    "phases": ["4"],
-    "requiredFlags": ["phase4-5_done"],
-    "repeatable": false,
-    "type": "image",
-    "setFlags": ["phase4-6_done"],
-    "clearFlags": ["phase3_done", "phase4-5_done"]
+    "clearFlags": ["phase3_done", "phase4-4and5_done"]
   },
   {
     "keywords": "周り,まわり,辺り,あたり,周囲,しゅうい,キョロキョロ,きょろきょろ,見回す,みまわす,見渡す,みわたす",
