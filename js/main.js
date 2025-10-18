@@ -104,6 +104,12 @@
 */
 /* --------------- Thanks ---------------- */
 
+function sendGAEvent(eventName, params = {}) {
+  if (typeof gtag === "function") {
+    gtag("event", eventName, params);
+  }
+}
+
 let gameState = {
   phase: "1",
   flags: [],
@@ -204,9 +210,10 @@ fetch("data/keywords.json")
   .then((data) => {
     keywords = data;
     const p1 = keywords.find((k) => k.keyword === "__phase1_start");
-    if (p1) sendAliceMessage(p1);
+    if (p1) sendGAEvent("ga_game_start");
+    sendAliceMessage(p1);
     console.log(
-      "%cようこそ、幽廻即売会へ。%c\nデベロッパーツールを開くなんて、勇気がありますね。\nなんでこんな所を見ているんですか？\nアリスはあなたの助けを待っているようですよ。",
+      "%c開発者の皆さま ようこそ、幽廻即売会へ。%c\nデベロッパーツールを開くなんて勇気がありますね！\nなぜこんな所を見ているのですか？ここには何もありません！\nチャットにお戻り下さい…アリスはあなたの助けを待っているようですよ…。",
       "color: #b71c1c; font-size: 15px; font-weight: bold;",
       "color: #fff; font-size: 13px;"
     );
@@ -721,6 +728,9 @@ function kHasPhase(k, p) {
 
 /* ------------ Alice sender ------------- */
 function sendAliceMessage(kwObj) {
+  sendGAEvent("message_triggered", {
+    keyword: kwObj.keyword || kwObj.keywords || "unknown",
+  });
   const isSystem = kwObj.type === "system";
   gameState.aliceTyping = true;
   sendButton.disabled = true;
@@ -769,6 +779,7 @@ function sendAliceMessage(kwObj) {
         !gameState.badEndSystemShown &&
         kwObj.keyword !== "__phase3_badEnding_system"
       ) {
+        sendGAEvent("ga_ending_bad_p3");
         const sys = keywords.find(
           (k) => k.keyword === "__phase3_badEnding_system" && !isUsed(k)
         );
@@ -787,6 +798,7 @@ function sendAliceMessage(kwObj) {
         gameState.flags.includes("phase8-1_clear") &&
         kwObj.keyword !== "__phase8_1_system"
       ) {
+        sendGAEvent("ga_ending_true");
         const sysG = keywords.find(
           (k) => k.keyword === "__phase8_1_system" && !isUsed(k)
         );
@@ -799,6 +811,7 @@ function sendAliceMessage(kwObj) {
         gameState.flags.includes("phase8_badEnding") &&
         kwObj.keyword !== "__phase8_bad_system"
       ) {
+        sendGAEvent("ending_bad_p8");
         const sysB = keywords.find(
           (k) => k.keyword === "__phase8_bad_system" && !isUsed(k)
         );
