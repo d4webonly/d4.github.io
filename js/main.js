@@ -385,19 +385,18 @@ function findPhase4Entry(userText) {
     return touchesPhaseFlag || requiresP3Done;
   };
 
-  const cands = keywords.filter(
+  let cands = keywords.filter(
     (k) =>
-      k.phases?.includes("4") &&
+      k.phases?.some((p) => String(p).startsWith("4")) &&
       matchKeywords(userText, k) &&
       requiredFlagsOK(k) &&
       !isUsed(k) &&
       isMainP4(k)
   );
+
   if (cands.length <= 1) return cands[0] || null;
 
-  const has44 = cands.find((k) => (k.setFlags || []).includes("phase4-4_done"));
-  const has45 = cands.find((k) => (k.setFlags || []).includes("phase4-5_done"));
-  if (has44 && has45) return has44;
+  // requiredFlags が多いもの（条件が厳しいもの）を優先
   cands.sort(
     (a, b) => (b.requiredFlags?.length || 0) - (a.requiredFlags?.length || 0)
   );
@@ -664,7 +663,10 @@ function aliceReply(userText) {
   }
 
   // Phase4
-  if (gameState.flags.includes("phase3_done")) {
+  if (
+    gameState.flags.includes("phase3_done") ||
+    gameState.flags.includes("phase4-4and5_done")
+  ) {
     const p4 = findPhase4Entry(userText);
     if (p4) {
       gameState.phase = "4";
