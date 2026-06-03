@@ -1,4 +1,4 @@
-import { normalizeInput } from "./normalizer.js";
+﻿import { normalizeInput } from "./normalizer.js";
 import { saveGameState } from "./state.js";
 import { sendAnalyticsTrigger } from "./analytics.js";
 
@@ -41,7 +41,7 @@ function normalizePlayerNameInput(input) {
   const normalized = trimmed
     .replace(/[！!。．.]+$/g, "")
     .replace(/^(私は|わたしは|俺は|僕は|ぼくは|名前は)/, "")
-    .replace(/(って呼んで|でお願いします|と呼んでください|です|だよ|だ)$/g, "")
+    .replace(/(って呼んで|です|だよ|と呼んでください|でお願いします)$/g, "")
     .trim();
 
   return normalized || trimmed;
@@ -645,7 +645,7 @@ export class KeywordGameEngine {
 
   getDynamicDeadlineText() {
     const minutes = this.getDeadlineRemainingMinutes();
-    if (minutes <= 0) return "シメキリマデゼロフン";
+    if (minutes <= 0) return "繧ｷ繝｡繧ｭ繝ｪ繝槭ョ繧ｼ繝ｭ繝輔Φ";
     return DEADLINE_TEXT_BY_MINUTE[minutes] || DEADLINE_TEXT_BY_MINUTE[30];
   }
 

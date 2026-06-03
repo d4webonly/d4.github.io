@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="ja">
   <head>
     <!-- Google tag (gtag.js) -->
@@ -66,6 +66,16 @@
           placeholder="メッセージを入力"
           aria-label="メッセージ"
         >
+        <div id="stampPicker" class="stamp-picker" hidden></div>
+        <button
+          id="stampButton"
+          class="stamp-button"
+          type="button"
+          aria-label="スタンプを選択"
+          title="スタンプ"
+        >
+          <span class="material-symbols-outlined" aria-hidden="true">mood</span>
+        </button>
         <button id="sendButton" class="send-button" type="submit">送信</button>
       </form>
     </div>
@@ -127,3 +137,4 @@
     <script type="module" src="js/main.js"></script>
   </body>
 </html>
+

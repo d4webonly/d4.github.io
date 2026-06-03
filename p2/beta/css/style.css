@@ -404,6 +404,19 @@ select {
   border-radius: 0;
 }
 
+.outgoing .message-bubble.stamp-bubble {
+  padding: 4px 6px;
+  background: transparent;
+  box-shadow: none;
+}
+
+.stamp-message-image {
+  display: block;
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+}
+
 .bad-message-row .message-bubble {
   max-width: min(88%, 640px);
   text-align: center;
@@ -809,8 +822,9 @@ select {
 }
 
 .message-form {
+  position: relative;
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 1fr 44px auto;
   gap: 8px;
   padding: 10px;
   background: #f8f8f8;
@@ -847,6 +861,111 @@ select {
 .send-button:disabled {
   opacity: 0.45;
   cursor: default;
+}
+
+.stamp-button {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 50%;
+  color: #333333;
+  background: transparent;
+  cursor: pointer;
+  transition:
+    background-color 160ms ease,
+    opacity 160ms ease;
+}
+
+.stamp-button:hover,
+.stamp-button:focus-visible {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.stamp-button:focus-visible {
+  outline: 2px solid rgba(0, 0, 0, 0.28);
+  outline-offset: 2px;
+}
+
+.stamp-button:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.stamp-button:disabled:hover,
+.stamp-button:disabled:focus-visible {
+  background: transparent;
+}
+
+.stamp-button .material-symbols-outlined {
+  font-size: 28px;
+  line-height: 1;
+}
+
+.stamp-picker {
+  position: absolute;
+  right: 88px;
+  bottom: calc(100% + 8px);
+  z-index: 20;
+  max-width: min(320px, calc(100vw - 28px));
+  padding: 10px;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.22);
+}
+
+.stamp-picker[hidden] {
+  display: none;
+}
+
+.stamp-picker::after {
+  content: "";
+  position: absolute;
+  right: 24px;
+  bottom: -8px;
+  width: 16px;
+  height: 16px;
+  background: #ffffff;
+  transform: rotate(45deg);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.stamp-picker__list {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 64px);
+  gap: 8px;
+}
+
+.stamp-picker__item {
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  padding: 4px;
+  border: 0;
+  border-radius: 10px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.stamp-picker__item:hover,
+.stamp-picker__item:focus-visible {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.stamp-picker__item:focus-visible {
+  outline: 2px solid rgba(0, 0, 0, 0.28);
+  outline-offset: 2px;
+}
+
+.stamp-picker__image {
+  display: block;
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
 }
 
 .debug-panel {
@@ -1009,8 +1128,33 @@ select {
   }
 
   .message-form {
-    grid-template-columns: 1fr 60px;
+    grid-template-columns: 1fr 42px 60px;
     gap: 6px;
+  }
+
+  .stamp-button {
+    width: 42px;
+    height: 42px;
+  }
+
+  .stamp-picker {
+    right: 72px;
+    max-width: calc(100vw - 20px);
+  }
+
+  .stamp-picker__list {
+    grid-template-columns: repeat(4, 58px);
+    gap: 6px;
+  }
+
+  .stamp-picker__item {
+    width: 58px;
+    height: 58px;
+  }
+
+  .stamp-picker__image {
+    width: 50px;
+    height: 50px;
   }
 
   .send-button {

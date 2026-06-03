@@ -9,12 +9,15 @@ export class ChatRenderer {
     this.newMessageButton = elements.newMessageButton;
     this.messageInput = elements.messageInput;
     this.sendButton = elements.sendButton;
+    this.stampButton = elements.stampButton;
+    this.stampPicker = elements.stampPicker;
     this.statusText = elements.statusText;
     this.chatHeader = elements.chatHeader || document.querySelector(".chat-header");
     this.profileName = elements.profileName || document.querySelector(".profile-name");
     this.imageModal = null;
     this.pdfModal = null;
     this.privacyModal = null;
+    this.stampPickerCleanup = null;
 
     this.newMessageButton.addEventListener("click", () => {
       this.scrollToBottom();
@@ -45,6 +48,9 @@ export class ChatRenderer {
     if (message.badMessage) {
       row.classList.add("bad-message-row");
     }
+    if (message.type === "stamp") {
+      row.classList.add("stamp-message-row");
+    }
 
     const bubble = document.createElement("div");
     bubble.className = "message-bubble";
@@ -71,6 +77,17 @@ export class ChatRenderer {
   }
 
   appendMessageContent(bubble, message) {
+    if (message.type === "stamp") {
+      bubble.classList.add("stamp-bubble");
+      const image = document.createElement("img");
+      image.className = "stamp-message-image";
+      image.src = message.src;
+      image.alt = message.alt || "スタンプ";
+      image.loading = "lazy";
+      bubble.appendChild(image);
+      return;
+    }
+
     if (message.type === "image") {
       bubble.classList.add("image-bubble");
       const button = document.createElement("button");
@@ -377,6 +394,78 @@ export class ChatRenderer {
     this.privacyModal = null;
   }
 
+  bindStampPicker(stamps, onStampSelect) {
+    if (!this.stampButton || !this.stampPicker || this.stampPickerCleanup) return;
+
+    this.stampPicker.innerHTML = "";
+    const list = document.createElement("div");
+    list.className = "stamp-picker__list";
+
+    stamps.forEach((stamp) => {
+      const button = document.createElement("button");
+      button.className = "stamp-picker__item";
+      button.type = "button";
+      button.setAttribute("aria-label", stamp.alt);
+
+      const image = document.createElement("img");
+      image.className = "stamp-picker__image";
+      image.src = stamp.src;
+      image.alt = stamp.alt;
+      image.loading = "lazy";
+
+      button.appendChild(image);
+      button.addEventListener("click", () => {
+        this.closeStampPicker();
+        onStampSelect(stamp);
+      });
+      list.appendChild(button);
+    });
+
+    this.stampPicker.appendChild(list);
+
+    const onButtonClick = (event) => {
+      event.stopPropagation();
+      if (this.stampButton.disabled) return;
+      this.toggleStampPicker();
+    };
+
+    const onPickerClick = (event) => {
+      event.stopPropagation();
+    };
+
+    const onDocumentClick = (event) => {
+      if (this.stampPicker.hidden) return;
+      if (this.stampPicker.contains(event.target) || this.stampButton.contains(event.target)) return;
+      this.closeStampPicker();
+    };
+
+    const onKeyDown = (event) => {
+      if (event.key === "Escape") this.closeStampPicker();
+    };
+
+    this.stampButton.addEventListener("click", onButtonClick);
+    this.stampPicker.addEventListener("click", onPickerClick);
+    document.addEventListener("click", onDocumentClick);
+    document.addEventListener("keydown", onKeyDown);
+
+    this.stampPickerCleanup = () => {
+      this.stampButton.removeEventListener("click", onButtonClick);
+      this.stampPicker.removeEventListener("click", onPickerClick);
+      document.removeEventListener("click", onDocumentClick);
+      document.removeEventListener("keydown", onKeyDown);
+    };
+  }
+
+  toggleStampPicker() {
+    if (!this.stampPicker) return;
+    this.stampPicker.hidden = !this.stampPicker.hidden;
+  }
+
+  closeStampPicker() {
+    if (!this.stampPicker) return;
+    this.stampPicker.hidden = true;
+  }
+
   showCorruptionOverlay() {
     document.querySelectorAll(".corruption-overlay").forEach((element) => element.remove());
 
@@ -444,6 +533,12 @@ export class ChatRenderer {
   setInputLocked(isLocked) {
     this.messageInput.disabled = isLocked;
     this.sendButton.disabled = isLocked;
+    if (this.stampButton) {
+      this.stampButton.disabled = isLocked;
+    }
+    if (isLocked) {
+      this.closeStampPicker();
+    }
   }
 
   setBadEndStatus(isBadEnd) {

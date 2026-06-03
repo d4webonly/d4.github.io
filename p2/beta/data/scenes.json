@@ -144,7 +144,7 @@
         "delay": 2000
       },
       {
-        "text": "左側には、なんだろう？これは……なぞなぞ？100謎みたいな問題集がありますね。",
+        "text": "左側には、なんだろう？これは……謎解き？100謎みたいな問題集がありますね。",
         "delay": 2000
       },
       {
@@ -188,7 +188,8 @@
     "miss": {
       "countAsMiss": false,
       "message": "他のメッセージを送信してください。"
-    }
+    },
+    "nextSceneAfterMessages": "01_common_07"
   },
   "01_common_07": {
     "id": "01_common_07",
@@ -447,8 +448,8 @@
       },
       {
         "type": "image",
-        "src": "https://placehold.co/500x500",
-        "alt": "入稿時のチェックリスト",
+        "src": "assets/EYSz8C7KUCVA6Z2F9tuu_c_checklist.jpg",
+        "alt": "入稿チェックリスト_タメ口ルート",
         "delay": 5000
       },
       {
@@ -729,7 +730,7 @@
     "id": "a05_confirmation_multiple",
     "messages": [
       {
-        "text": "オンデマンド本ってなんかの倍数のページにしないといけないって何かで見た気がする……。<br>なんだっけ！う～思い出せない！",
+        "text": "……あれ？確か本を作るときって、なんかの倍数の数字にしなくちゃいけなかったよね。<br>なんだっけ……どこかに書いてあった気がする……！何の倍数か覚えてる……！？",
         "delay": 2000
       }
     ],
@@ -794,19 +795,11 @@
     "id": "a05_confirmation_cover",
     "messages": [
       {
-        "text": "あとは、表紙。画像の準備は間に合わないから無地にタイトル付けて、ネタバレ注意の表記をして……",
+        "text": "そしたら、背幅も考えないと……。せっかくだし無線綴じにしたいと思ってて！<br>背幅って確か、用紙の厚さとかで変わってくるよね？",
         "delay": 2000
       },
       {
-        "text": "できた！あとはこれで……<br>待って。表紙って、別でデータ用意する感じ……？<br>てか用紙種類も考えてなかったよね！？",
-        "delay": 2000
-      },
-      {
-        "text": "私、作りたいサイズでデータを作れば、勝手に表紙と裏表紙になるんだと思ってたからデータ作ってない……！",
-        "delay": 2000
-      },
-      {
-        "text": "背幅も考えないと……<br>ま、まずい。背幅って確か、用紙の厚さとかで変わってくるよね……！？<br>どうしよう、さっきも言ったけど私、こういうとき頭回らなくて簡単な計算すらできなくなっちゃうんだよ～！",
+        "text": "……ま、まずい。<br>さっきも言ったけど私、こういうとき頭回らなくて簡単な計算すらできなくなっちゃうんだよ～！",
         "delay": 2000
       },
       {
@@ -822,6 +815,18 @@
   "a05_confirmation_cover_paper": {
     "id": "a05_confirmation_cover_paper",
     "messages": [
+      {
+        "text": "あとは、表紙。画像の準備は間に合わないから無地にタイトル付けて、ネタバレ注意の表記をして……",
+        "delay": 2000
+      },
+      {
+        "text": "できた！あとはこれで……<br>待って。表紙って、別でデータ用意する感じ……？<br>てか用紙種類も決めてなかったよね！？",
+        "delay": 2000
+      },
+      {
+        "text": "私、作りたいサイズでデータを作れば、勝手に表紙と裏表紙になるんだと思ってたからデータ作ってない……！",
+        "delay": 2000
+      },
       {
         "text": "えーとえーと、ごめん、表紙に使う用紙の相談も乗ってほしい！",
         "delay": 2000
@@ -987,7 +992,7 @@
         "delay": 5000
       },
       {
-        "text": "……今の私の所持金では、ちょっと払えなそうになく。",
+        "text": "今の私の所持金は300円。……ちょっと払えなそうになく。",
         "delay": 2000
       },
       {
@@ -1060,7 +1065,7 @@
   },
   "a08-1_true": {
     "id": "a08-1_true",
-    "lockInputOnStart": true,
+    "lockInputOnStart": false,
     "gaTriggerId": "a08_true_end",
     "messages": [
       {
@@ -1070,47 +1075,13 @@
       },
       {
         "type": "image",
-        "src": "https://placehold.co/800x500",
-        "alt": "完成した本",
+        "src": "assets/DwusPB8f6zdAu3DfT5BZ_invoice.jpg",
+        "alt": "請求書",
         "delay": 5000
       },
       {
         "text": "これって……！！",
         "delay": 2000
-      },
-      {
-        "text": "よかった、よかったあー！！本当に（名前）のおかげだよ！！",
-        "delay": 2000
-      },
-      {
-        "text": "あ……印刷所のシャッターが開いた！……外に出られそう！！",
-        "delay": 2000
-      },
-      {
-        "text": "これで帰れる！D:IV_visionに参加できる！ご飯も食べられる！寝転がれる！自由だ―！",
-        "delay": 2000
-      },
-      {
-        "text": "今回は本当にありがとうございます！おかげで無事に戻れそうです……！",
-        "delay": 2000
-      },
-      {
-        "text": "ここから出た後は絶対に君に寄稿してもらった同人誌を届けにいくからね！約束だよ！",
-        "delay": 2000
-      },
-      {
-        "sender": "system",
-        "systemStyle": "ending",
-        "text": "─救出成功─<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br><br>http://google.com",
-        "delay": 2000
-      },
-      {
-        "sender": "system",
-        "systemStyle": "ending",
-        "type": "restartButton",
-        "text": "この扉に再接続する",
-        "delay": 2000,
-        "clickTriggerId": "restart_button_clicked"
       }
     ],
     "miss": {
@@ -1330,8 +1301,8 @@
     "messages": [
       {
         "type": "image",
-        "src": "https://placehold.co/500x500",
-        "alt": "入稿時のチェックリスト",
+        "src": "assets/Qp6NiQE6YNmKYympsuD6_f_checklist.jpg",
+        "alt": "入稿チェックリスト_敬語ルート",
         "delay": 5000
       },
       {
@@ -2074,7 +2045,7 @@
       },
       {
         "sender": "system",
-        "text": "─救出成功─<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br><br>http://google.com",
+        "text": "─救出成功─<br><br>君と編んだ「好き」の結晶<br><br>https://d4-vision-oparation.netlify.app/",
         "systemStyle": "ending",
         "delay": 2000
       },
@@ -2292,11 +2263,21 @@
   },
   "a02_organize_before_confession_wait": {
     "id": "a02_organize_before_confession_wait",
-    "messages": [],
+    "messages": [
+      {
+        "text": "実は……原稿が、終わってません！！！",
+        "delay": 2000
+      },
+      {
+        "text": "いや、あと少し！あと少しで書き終わるの……！<br>だから、その……私は、原稿を完成させることに注力する、から……",
+        "delay": 2000
+      }
+    ],
     "miss": {
       "countAsMiss": false,
       "message": "他のメッセージを送信してください。"
-    }
+    },
+    "nextSceneAfterMessages": "a02_organize_02"
   },
   "a03_specification_req_print_after_image_wait": {
     "id": "a03_specification_req_print_after_image_wait",
@@ -2359,6 +2340,132 @@
       {
         "text": "あれ、違いましたか？じゃあ、もう一度……なんて呼べばいいか教えてください！",
         "delay": 2000
+      }
+    ],
+    "miss": {
+      "countAsMiss": false,
+      "message": "他のメッセージを送信してください。"
+    }
+  },
+  "a08-1_true_after_reaction": {
+    "id": "a08-1_true_after_reaction",
+    "lockInputOnStart": false,
+    "messages": [
+      {
+        "text": "よかった、よかったあー！！本当に（名前）のおかげだよ！！",
+        "delay": 2000
+      },
+      {
+        "text": "あ……印刷所のシャッターが開いた！……外に出られそう！！",
+        "delay": 2000
+      },
+      {
+        "text": "これで帰れる！D:IV_visionに参加できる！ご飯も食べられる！寝転がれる！自由だ―！",
+        "delay": 2000
+      },
+      {
+        "text": "（名前）！今回も本当にありがとう。おかげで無事に戻れそうだよ……！",
+        "delay": 2000
+      },
+      {
+        "text": "私の無茶なお願いに応えてくれたことも、すっごく嬉しかった！",
+        "delay": 2000
+      },
+      {
+        "text": "私にはできないんだーって思い込んで、挑戦しないのは嫌だ！って足掻いてみたけど……<br>（名前）がいなかったら私、きっとまたこの世界に閉じ込められていたままだったと思う。<br>ねえ、そう思わない？",
+        "delay": 2000
+      }
+    ],
+    "miss": {
+      "countAsMiss": false,
+      "message": "他のメッセージを送信してください。"
+    }
+  },
+  "a08-1_true_after_reaction_1": {
+    "id": "a08-1_true_after_reaction_1",
+    "lockInputOnStart": false,
+    "messages": [
+      {
+        "text": "よかった、よかったあー！！本当に（名前）のおかげだよ！！",
+        "delay": 2000
+      },
+      {
+        "text": "あ……印刷所のシャッターが開いた！……外に出られそう！！",
+        "delay": 2000
+      },
+      {
+        "text": "これで帰れる！D:IV_visionに参加できる！ご飯も食べられる！寝転がれる！自由だ―！",
+        "delay": 2000
+      },
+      {
+        "text": "（名前）！今回も本当にありがとう。おかげで無事に戻れそうだよ……！",
+        "delay": 2000
+      },
+      {
+        "text": "私の無茶なお願いに応えてくれたことも、すっごく嬉しかった！",
+        "delay": 2000
+      },
+      {
+        "text": "私にはできないんだーって思い込んで、挑戦しないのは嫌だ！って足掻いてみたけど……<br>（名前）がいなかったら私、きっとまたこの世界に閉じ込められていたままだったと思う。<br>ねえ、そう思わない？",
+        "delay": 2000
+      }
+    ],
+    "miss": {
+      "countAsMiss": false,
+      "message": "他のメッセージを送信してください。"
+    }
+  },
+  "a08-1_true_after_reaction_2": {
+    "id": "a08-1_true_after_reaction_2",
+    "lockInputOnStart": false,
+    "messages": [
+      {
+        "text": "たはは……私、一人で突っ走り気味なとこ、反省しなくちゃね。",
+        "delay": 2000
+      },
+      {
+        "text": "今度はもっと、人に頼ってみようかな。色んな交錯員さんに声をかけて……<br>友達になって、第四境界の好きなところを語り合って、もーっとおっきな合同誌を作っちゃったり！",
+        "delay": 2000
+      },
+      {
+        "text": "その時は、（名前）も参加してほしいな。",
+        "delay": 2000
+      }
+    ],
+    "miss": {
+      "countAsMiss": false,
+      "message": "他のメッセージを送信してください。"
+    }
+  },
+  "a08-1_true_after_reaction_3": {
+    "id": "a08-1_true_after_reaction_3",
+    "lockInputOnStart": true,
+    "messages": [
+      {
+        "text": "えへへ、考えておいてね？",
+        "delay": 2000
+      },
+      {
+        "text": "……よし。本当はもっと話していたい気持ちだけど……そろそろ帰るね、そっちの世界に！",
+        "delay": 2000
+      },
+      {
+        "text": "寄稿してもらった同人誌、絶対に君に届けにいくから。<br>……約束だよ！また、D:IV_visionで！",
+        "delay": 2000
+      },
+      {
+        "sender": "system",
+        "systemStyle": "ending",
+        "text": "─救出成功─<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br><br>http://google.com",
+        "delay": 2000
+      },
+      {
+        "sender": "system",
+        "systemStyle": "ending",
+        "type": "restartButton",
+        "text": "この扉に再接続する",
+        "delay": 2000,
+        "clickTriggerId": "restart_button_clicked"
       }
     ],
     "miss": {

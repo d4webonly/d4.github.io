@@ -9,6 +9,29 @@ const DATA_PATHS = {
   keywords: "data/keywords.json"
 };
 
+const STAMPS = [
+  {
+    id: "cat",
+    src: "assets/stamps/cat.png",
+    alt: "猫スタンプ"
+  },
+  {
+    id: "dog",
+    src: "assets/stamps/dog.png",
+    alt: "犬スタンプ"
+  },
+  {
+    id: "rabbit",
+    src: "assets/stamps/rabbit.png",
+    alt: "兎スタンプ"
+  },
+  {
+    id: "KATSUO",
+    src: "assets/stamps/KATSUO.png",
+    alt: "鰹スタンプ"
+  }
+];
+
 let engine;
 
 document.addEventListener("DOMContentLoaded", async () => {
@@ -28,6 +51,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     newMessageButton: document.getElementById("newMessageButton"),
     messageInput: document.getElementById("messageInput"),
     sendButton: document.getElementById("sendButton"),
+    stampButton: document.getElementById("stampButton"),
+    stampPicker: document.getElementById("stampPicker"),
     statusText: document.getElementById("statusText"),
     profileName: document.querySelector(".profile-name")
   });
@@ -40,6 +65,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   });
 
   setupMessageForm(engine);
+  setupStampPicker({ keywordEngine: engine, renderer });
   setupDebugPanel({ engine, scenes, renderer });
   await engine.start();
 });
@@ -80,6 +106,25 @@ function setupMessageForm(keywordEngine) {
 
     input.value = "";
     await keywordEngine.submitPlayerMessage(text.trim());
+  });
+}
+
+function setupStampPicker({ keywordEngine, renderer }) {
+  renderer.bindStampPicker(STAMPS, (stamp) => {
+    if (keywordEngine.gameState.isInputLocked) return;
+
+    const message = {
+      sender: "user",
+      type: "stamp",
+      stampId: stamp.id,
+      src: stamp.src,
+      alt: stamp.alt,
+      time: new Date().toISOString()
+    };
+
+    keywordEngine.gameState.history.push(message);
+    saveGameState(keywordEngine.gameState);
+    renderer.appendMessage(message);
   });
 }
 
