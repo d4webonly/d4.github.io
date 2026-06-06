@@ -4,12 +4,12 @@
     "messages": [
       {
         "text": "CQCQ！メーデー！誰か、私に気づいて―！",
-        "delay": 2000,
+        "delay": 0,
         "triggerId": "scene_00_start_message"
       },
       {
         "text": "あっ……既読がついてる！？\nもしかして私のメッセージ、見えてますか！？",
-        "delay": 2000
+        "delay": 6000
       }
     ],
     "miss": {
@@ -382,7 +382,7 @@
         "delay": 2000
       },
       {
-        "text": "私の目の前には電源のついたパソコンがある…デスクトップには、Wordアプリと、ローカルフォルダのアイコンだけが表示されてる。<br>右側には「入稿時のチェックリスト」……っていう用紙が置いてある。<br>左側には、問題集のような冊子……表紙には「●■\"▲▼●■\"▲」って書いてある。中身は……なんだかミステリーコースターチャレンジみたいな画像がたくさん。何かと組み合わせて使うのかな……？<br>そして私は、座ってる椅子から動けない状態。",
+        "text": "私の目の前には電源のついたパソコンがある…デスクトップには、Wordアプリと、ローカルフォルダのアイコンだけが表示されてる。<br>右側には「入稿時のチェックリスト」……っていう用紙が置いてある。<br>左側には、問題集のような冊子……表紙には「●゛△▲゛◆゛◇▼▼●■゛▲」って書いてある。中身は……なんだかミステリーコースターチャレンジみたいな画像がたくさん。何かと組み合わせて使うのかな……？<br>そして私は、座ってる椅子から動けない状態。",
         "delay": 2000
       },
       {
@@ -987,8 +987,8 @@
       },
       {
         "type": "image",
-        "src": "https://placehold.co/800x500",
-        "alt": "新しく渡された紙",
+        "src": "assets/HuVMzKcgfwruBd5JmNr7_invoice.jpg",
+        "alt": "請求書",
         "delay": 5000
       },
       {
@@ -1075,8 +1075,8 @@
       },
       {
         "type": "image",
-        "src": "assets/DwusPB8f6zdAu3DfT5BZ_invoice.jpg",
-        "alt": "請求書",
+        "src": "assets/TS39dtTmcGmaC3UgKNrP_dNote.jpg",
+        "alt": "納品書",
         "delay": 5000
       },
       {
@@ -1162,8 +1162,8 @@
       },
       {
         "type": "image",
-        "src": "https://placehold.co/400x500",
-        "alt": "ご利用ありがとうございました",
+        "src": "assets/TS39dtTmcGmaC3UgKNrP_dNote.jpg",
+        "alt": "納品書",
         "delay": 5000
       },
       {
@@ -1188,7 +1188,7 @@
       },
       {
         "type": "image",
-        "src": "https://placehold.co/400x500",
+        "src": "assets/FPSAwDBERxFtGe5y3aCR_banned.png",
         "alt": "運営からのDM",
         "delay": 5000
       },
@@ -1434,7 +1434,7 @@
         "delay": 2000
       },
       {
-        "text": "私の目の前には電源のついたパソコンがある…デスクトップには、Wordアプリと、ローカルフォルダのアイコンだけが表示されてます。<br>右側には「冊子印刷用・チェックリスト」……っていう用紙が置いてありますね。<br>左側には、問題集のような冊子……表紙には「●■\"▲▼●■\"▲」って書いてあります。<br>中身は……なんだかミステリーコースターチャレンジみたいな画像がたくさん。何かと組み合わせて使うのかな……？<br>そして私は、座ってる椅子から動けない状態です。",
+        "text": "私の目の前には電源のついたパソコンがある…デスクトップには、Wordアプリと、ローカルフォルダのアイコンだけが表示されてます。<br>右側には「冊子印刷用・チェックリスト」……っていう用紙が置いてありますね。<br>左側には、問題集のような冊子……表紙には「●゛△▲゛◆゛◇▼▼●■゛▲」って書いてあります。<br>中身は……なんだかミステリーコースターチャレンジみたいな画像がたくさん。何かと組み合わせて使うのかな……？<br>そして私は、座ってる椅子から動けない状態です。",
         "delay": 5000
       },
       {
@@ -1737,7 +1737,7 @@
     "id": "b05_confirmation_numbering_word",
     "messages": [
       {
-        "text": "私、いつもスマホで原稿作ってて……これの操作ってどうしたらいいかわかりますか……？",
+        "text": "私、Wordって使ったことなくって……どういった操作をすれば、ページ番号を入れることができますか……！？",
         "delay": 2000
       }
     ],
@@ -1793,8 +1793,8 @@
       },
       {
         "type": "image",
-        "src": "https://placehold.co/700x700",
-        "alt": "面付け方法の説明",
+        "src": "assets/NfBap46LQmdZAw3Wx82t_impositionRiddle.jpg",
+        "alt": "面付け謎",
         "delay": 5000
       },
       {
@@ -1807,8 +1807,8 @@
       },
       {
         "type": "image",
-        "src": "https://placehold.co/700x700",
-        "alt": "面付け記入欄",
+        "src": "assets/iFGH7jV6DMCiR8ZGi2Ej_impositionMemo.jpg",
+        "alt": "面付けのメモ",
         "delay": 5000
       },
       {
@@ -1955,11 +1955,11 @@
         "delay": 2000
       },
       {
-        "text": "割増された料金のロックを解除できるパスワードがあるみたいです！！",
+        "text": "割増された料金のロックを解除できるパスコードがあるみたいです！！",
         "delay": 2000
       },
       {
-        "text": "ロック解除のパスワード、何か思いつきますか…！？",
+        "text": "ロック解除のパスコード、何か思いつきますか…！？",
         "delay": 2000
       }
     ],
@@ -2016,6 +2016,7 @@
   "b08-1_true": {
     "id": "b08-1_true",
     "lockInputOnStart": true,
+    "unlockInputAfterMessages": true,
     "gaTriggerId": "b08_true_end",
     "messages": [
       {
@@ -2024,38 +2025,32 @@
         "setHeaderNameOnMessage": "アリス"
       },
       {
-        "text": "わ、眩しい！急に印刷所のシャッターが開きました",
+        "text": "わ、眩しい！急に印刷所のシャッターが開きました！",
         "delay": 2000
       },
       {
-        "text": "外に出れそうです……！",
+        "text": "どうやら外に出れそうです……！",
         "delay": 2000
       },
       {
-        "text": "これで帰れる！ご飯も食べられるし、ディビジョンにも参加できる！自由だ―！",
+        "text": "これで帰れる！ご飯も食べられるし、ディヴィジョンにも参加できる！自由だ―！",
         "delay": 2000
       },
       {
-        "text": "今回は本当にありがとうございます！おかげで無事に戻れそうです……！",
+        "text": "（名前）さん、本当にありがとうございます！無事、そちらの世界に戻ることができそうです。",
         "delay": 2000
       },
       {
-        "text": "ここから出た後は絶対に君に寄稿してもらった同人誌を届けにいくからね！約束だよ！",
+        "text": "私の無茶なお願いに応えてくれたことも、とっても嬉しかったです！",
         "delay": 2000
       },
       {
-        "sender": "system",
-        "text": "─救出成功─<br><br>君と編んだ「好き」の結晶<br><br>https://d4-vision-oparation.netlify.app/",
-        "systemStyle": "ending",
+        "text": "（名前）さんがいなかったら私、きっとまたこの世界に閉じ込められていたままだったと思います。<br>私は、一人で突っ走る癖を直して……もっと人に頼ることを覚えないと、ですね。",
         "delay": 2000
       },
       {
-        "sender": "system",
-        "type": "restartButton",
-        "text": "この扉に再接続する",
-        "systemStyle": "ending",
-        "delay": 2000,
-        "clickTriggerId": "restart_button_clicked"
+        "text": "だから……また困ったときには、助けてくれますか？",
+        "delay": 2000
       }
     ],
     "miss": {
@@ -2152,10 +2147,9 @@
       },
       {
         "type": "image",
-        "text": "",
-        "src": "https://placehold.co/400x500",
+        "src": "assets/FPSAwDBERxFtGe5y3aCR_banned.png",
         "alt": "運営からのDM",
-        "delay": 3000
+        "delay": 5000
       },
       {
         "text": "え、そんなぁ……心当たりなんてないよ？でも違反してる……！？<br>なんで、なんで、なんで！？",
@@ -2456,7 +2450,7 @@
       {
         "sender": "system",
         "systemStyle": "ending",
-        "text": "─救出成功─<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br><br>http://google.com",
+        "text": "─救出成功─<br><br>君と編んだ「好き」の結晶<br><br>https://d4-vision-oparation.netlify.app/",
         "delay": 2000
       },
       {
@@ -2464,6 +2458,49 @@
         "systemStyle": "ending",
         "type": "restartButton",
         "text": "この扉に再接続する",
+        "delay": 2000,
+        "clickTriggerId": "restart_button_clicked"
+      }
+    ],
+    "miss": {
+      "countAsMiss": false,
+      "message": "他のメッセージを送信してください。"
+    }
+  },
+  "b08-1_true_after_reaction": {
+    "id": "b08-1_true_after_reaction",
+    "lockInputOnStart": true,
+    "messages": [
+      {
+        "text": "……よし。本当はもっと話していたい気持ちですが……そろそろ帰りますね、そちらの世界に！",
+        "delay": 2000
+      },
+      {
+        "text": "寄稿してもらった同人誌、絶対にあなたに届けにいくから。<br>……約束ですよ！また、D:IV_visionで！",
+        "delay": 2000
+      }
+    ],
+    "nextSceneAfterMessages": "b08-1_true_system",
+    "miss": {
+      "countAsMiss": false,
+      "message": "他のメッセージを送信してください。"
+    }
+  },
+  "b08-1_true_system": {
+    "id": "b08-1_true_system",
+    "lockInputOnStart": true,
+    "messages": [
+      {
+        "sender": "system",
+        "text": "─救出成功─<br><br>君と編んだ「好き」の結晶<br><br>https://d4-vision-oparation.netlify.app/",
+        "systemStyle": "ending",
+        "delay": 2000
+      },
+      {
+        "sender": "system",
+        "type": "restartButton",
+        "text": "この扉に再接続する",
+        "systemStyle": "ending",
         "delay": 2000,
         "clickTriggerId": "restart_button_clicked"
       }

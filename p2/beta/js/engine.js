@@ -327,6 +327,12 @@ export class KeywordGameEngine {
       this.save();
     }
 
+    if (scene.unlockInputAfterMessages) {
+      this.gameState.isInputLocked = false;
+      this.renderer.setInputLocked(false);
+      this.save();
+    }
+
     if (this.shouldStopMessagePlayback({ allowBadEndMessages })) return;
 
     const nextSceneByCounter = this.resolveNextSceneByCounter(scene);
@@ -645,7 +651,7 @@ export class KeywordGameEngine {
 
   getDynamicDeadlineText() {
     const minutes = this.getDeadlineRemainingMinutes();
-    if (minutes <= 0) return "繧ｷ繝｡繧ｭ繝ｪ繝槭ョ繧ｼ繝ｭ繝輔Φ";
+    if (minutes <= 0) return "シメキリマデゼロフン";
     return DEADLINE_TEXT_BY_MINUTE[minutes] || DEADLINE_TEXT_BY_MINUTE[30];
   }
 

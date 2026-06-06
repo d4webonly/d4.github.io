@@ -404,16 +404,17 @@ select {
   border-radius: 0;
 }
 
-.outgoing .message-bubble.stamp-bubble {
+.message-bubble.stamp-bubble {
   padding: 4px 6px;
+  border-radius: 0;
   background: transparent;
   box-shadow: none;
 }
 
 .stamp-message-image {
   display: block;
-  width: 96px;
-  height: 96px;
+  width: 144px;
+  height: 144px;
   object-fit: contain;
 }
 
@@ -908,7 +909,7 @@ select {
   right: 88px;
   bottom: calc(100% + 8px);
   z-index: 20;
-  max-width: min(320px, calc(100vw - 28px));
+  max-width: min(180px, calc(100vw - 28px));
   padding: 10px;
   border-radius: 12px;
   background: #ffffff;
@@ -935,7 +936,7 @@ select {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: repeat(4, 64px);
+  grid-template-columns: repeat(2, 64px);
   gap: 8px;
 }
 
@@ -1139,11 +1140,11 @@ select {
 
   .stamp-picker {
     right: 72px;
-    max-width: calc(100vw - 20px);
+    max-width: min(150px, calc(100vw - 20px));
   }
 
   .stamp-picker__list {
-    grid-template-columns: repeat(4, 58px);
+    grid-template-columns: repeat(2, 58px);
     gap: 6px;
   }
 

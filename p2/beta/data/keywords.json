@@ -45,7 +45,17 @@
   {
     "keywords": [
       "はい",
-      "うん"
+      "うん",
+      "YES",
+      "Yes",
+      "おう",
+      "いえす",
+      "イエス",
+      "もち",
+      "もちろん",
+      "モチロン",
+      "勿論",
+      "まあ"
     ],
     "matchType": "exact",
     "requiredFlags": {},
@@ -71,7 +81,11 @@
       "知ってますよ",
       "聞いたことある",
       "参加者",
-      "知る"
+      "知る",
+      "しってる",
+      "しっている",
+      "参加",
+      "出展"
     ],
     "matchType": "includes",
     "requiredFlags": {},
@@ -90,8 +104,9 @@
     "keywords": [
       "いいえ",
       "？",
-      "何それ",
-      "なにそれ"
+      "NO",
+      "No",
+      "ノー"
     ],
     "matchType": "exact",
     "requiredFlags": {},
@@ -114,7 +129,17 @@
       "分からない",
       "初耳",
       "知らないです",
-      "わかりません"
+      "わかりません",
+      "しらない",
+      "しらん",
+      "分からん",
+      "わからん",
+      "なにそれ",
+      "何それ",
+      "きいたことない",
+      "聞いたことない",
+      "聴いたことない",
+      "疎い"
     ],
     "matchType": "includes",
     "requiredFlags": {},
@@ -135,9 +160,21 @@
       "Yes",
       "yes",
       "いいよ",
-      "もちろん"
+      "OK",
+      "ハイ",
+      "うん",
+      "おう",
+      "りょ",
+      "いい",
+      "良い",
+      "イイ",
+      "ＯＫ",
+      "おｋ",
+      "やる",
+      "守護",
+      "しゅご"
     ],
-    "matchType": "includes",
+    "matchType": "exact",
     "requiredFlags": {},
     "response": [
       {
@@ -156,7 +193,42 @@
       "助けます",
       "任せて",
       "任せてください",
-      "協力する"
+      "協力する",
+      "りょうかい",
+      "りょーかい",
+      "了解",
+      "承知",
+      "おかのした",
+      "いーよ",
+      "わかった",
+      "わかりました",
+      "分かった",
+      "分かりました",
+      "おっけー",
+      "オッケー",
+      "おーけー",
+      "オーケー",
+      "おーけい",
+      "オーケイ",
+      "まかせ",
+      "任せ",
+      "もちろん",
+      "モチロン",
+      "勿論",
+      "しかたない",
+      "仕方ない",
+      "しゃーない",
+      "しゃあない",
+      "今回だけ",
+      "一回きり",
+      "やってやる",
+      "しらべとく",
+      "調べとく",
+      "たすける",
+      "助けよう",
+      "たすけよう",
+      "救う",
+      "すくう"
     ],
     "matchType": "includes",
     "requiredFlags": {},
@@ -168,6 +240,64 @@
     ],
     "countAsMiss": false,
     "id": "common_03_help_yes_includes",
+    "sceneId": "01_common_03",
+    "nextScene": "01_common_04"
+  },
+  {
+    "keywords": [
+      "いいえ",
+      "やだ",
+      "ヤダ",
+      "いや",
+      "嫌",
+      "むり",
+      "ムリ",
+      "無理",
+      "なんで",
+      "なぜ"
+    ],
+    "matchType": "exact",
+    "requiredFlags": {},
+    "response": [
+      {
+        "text": "えっ……「はい」って言ってくれないんですか！？<br>目の前に困っている美少女がいるのに！？……な、なーんて。",
+        "delay": 2000
+      }
+    ],
+    "countAsMiss": false,
+    "id": "common_03_help_no_exact",
+    "sceneId": "01_common_03",
+    "nextScene": "01_common_04"
+  },
+  {
+    "keywords": [
+      "わからない",
+      "わからん",
+      "知らない",
+      "しらない",
+      "知らん",
+      "できない",
+      "どうして",
+      "やりたくない",
+      "自分で調べて",
+      "自分でやって",
+      "どうにかしろ",
+      "どうにかして",
+      "手伝えない",
+      "てつだえない",
+      "忙しい",
+      "いそがしい"
+    ],
+    "matchType": "includes",
+    "requiredFlags": {},
+    "response": [
+      {
+        "text": "えっ……「はい」って言ってくれないんですか！？<br>目の前に困っている美少女がいるのに！？……な、なーんて。",
+        "delay": 2000
+      }
+    ],
+    "countAsMiss": false,
+    "id": "common_03_help_no_includes",
     "sceneId": "01_common_03",
     "nextScene": "01_common_04"
   },
@@ -188,7 +318,56 @@
   },
   {
     "keywords": [
-      "いいえ"
+      "はい",
+      "ハイ",
+      "うん",
+      "おう"
+    ],
+    "matchType": "exact",
+    "requiredFlags": {},
+    "response": [
+      {
+        "text": "念のため、ここから見えるものを文章でもお伝えしますね。",
+        "delay": 2000
+      }
+    ],
+    "countAsMiss": false,
+    "id": "common_04_image_visible_exact",
+    "sceneId": "01_common_04",
+    "nextScene": "01_common_05"
+  },
+  {
+    "keywords": [
+      "みえる",
+      "見える",
+      "わかる",
+      "分かる",
+      "だいじょうぶ",
+      "だいじょーぶ",
+      "ダイジョウブ",
+      "大丈夫",
+      "把握",
+      "理解",
+      "問題なし",
+      "問題ない"
+    ],
+    "matchType": "includes",
+    "requiredFlags": {},
+    "response": [
+      {
+        "text": "念のため、ここから見えるものを文章でもお伝えしますね。",
+        "delay": 2000
+      }
+    ],
+    "countAsMiss": false,
+    "id": "common_04_image_visible_includes",
+    "sceneId": "01_common_04",
+    "nextScene": "01_common_05"
+  },
+  {
+    "keywords": [
+      "いいえ",
+      "イイエ"
     ],
     "matchType": "exact",
     "requiredFlags": {},
@@ -212,7 +391,17 @@
       "見れない",
       "見られない",
       "表示されない",
-      "画像見えない"
+      "画像見えない",
+      "みえない",
+      "みえづらい",
+      "見えづらい",
+      "わからん",
+      "分からん",
+      "ノイズ",
+      "くらい",
+      "暗い",
+      "ライト",
+      "フラッシュ"
     ],
     "matchType": "includes",
     "requiredFlags": {},
@@ -325,7 +514,20 @@
     "keywords": [
       "はい",
       "いいよ",
-      "もちろん"
+      "もちろん",
+      "OK",
+      "ハイ",
+      "うん",
+      "おう",
+      "りょ",
+      "いい",
+      "良い",
+      "イイ",
+      "ＯＫ",
+      "おｋ",
+      "やる",
+      "守護",
+      "しゅご"
     ],
     "matchType": "exact",
     "requiredFlags": {},
@@ -346,8 +548,39 @@
       "助ける",
       "任せて",
       "最後まで",
-      "やる",
-      "協力する"
+      "協力する",
+      "りょうかい",
+      "りょーかい",
+      "了解",
+      "承知",
+      "おかのした",
+      "いーよ",
+      "わかった",
+      "わかりました",
+      "分かった",
+      "分かりました",
+      "おっけー",
+      "オッケー",
+      "おーけー",
+      "オーケー",
+      "おーけい",
+      "オーケイ",
+      "まかせ",
+      "任せ",
+      "モチロン",
+      "勿論",
+      "しかたない",
+      "仕方ない",
+      "しゃーない",
+      "しゃあない",
+      "今回だけ",
+      "一回きり",
+      "やってやる",
+      "つきあう",
+      "付き合う",
+      "つきあってやる",
+      "付き合ってやる",
+      "もちろんです"
     ],
     "matchType": "includes",
     "requiredFlags": {},
@@ -649,10 +882,65 @@
   {
     "keywords": [
       "はい",
+      "ハイ",
+      "うん",
+      "おう",
+      "りょ",
+      "いい",
+      "良い",
+      "イイ",
+      "OK",
+      "ＯＫ",
+      "おｋ",
+      "やる"
+    ],
+    "matchType": "exact",
+    "requiredFlags": {},
+    "response": [
+      {
+        "text": "ありがとう……！！　この反省は、必ずや次に活かします……。",
+        "delay": 2000
+      }
+    ],
+    "countAsMiss": false,
+    "id": "a02_organize_02_yes_exact",
+    "sceneId": "a02_organize_02",
+    "nextScene": "a03_specification_intro"
+  },
+  {
+    "keywords": [
       "いいよ",
       "もちろん",
       "任せて",
-      "やる"
+      "りょうかい",
+      "りょーかい",
+      "了解",
+      "承知",
+      "おかのした",
+      "いーよ",
+      "わかった",
+      "わかりました",
+      "分かった",
+      "分かりました",
+      "おっけー",
+      "オッケー",
+      "おーけー",
+      "オーケー",
+      "おーけい",
+      "オーケイ",
+      "まかせ",
+      "任せ",
+      "モチロン",
+      "勿論",
+      "しかたない",
+      "仕方ない",
+      "しゃーない",
+      "しゃあない",
+      "今回だけ",
+      "一回きり",
+      "やってやる",
+      "しらべとく",
+      "調べとく"
     ],
     "matchType": "includes",
     "requiredFlags": {},
@@ -670,9 +958,40 @@
   {
     "keywords": [
       "いいえ",
-      "無理",
+      "やだ",
+      "ヤダ",
+      "いや",
       "嫌",
-      "できない"
+      "むり",
+      "ムリ",
+      "無理",
+      "なんで",
+      "なぜ"
+    ],
+    "matchType": "exact",
+    "requiredFlags": {},
+    "response": [
+      {
+        "text": "……意地悪しないで？　ね、前も、私にはわからないような難しい謎……解いてくれたよね？<br>（名前）のこと、すご～く頼りにしてるんだよ？",
+        "delay": 2000
+      }
+    ],
+    "countAsMiss": false,
+    "id": "a02_organize_02_no_exact",
+    "sceneId": "a02_organize_02"
+  },
+  {
+    "keywords": [
+      "できない",
+      "わからない",
+      "わからん",
+      "知らない",
+      "しらない",
+      "知らん",
+      "どうして",
+      "やりたくない",
+      "自分で調べて",
+      "自分でやって"
     ],
     "matchType": "includes",
     "requiredFlags": {},
@@ -702,7 +1021,7 @@
       "問題",
       "問題集",
       "謎",
-      "■▲葉▼〇◆"
+      "●゛△▲゛◆゛◇▼▼●■゛▲"
     ],
     "matchType": "includes",
     "requiredFlags": {
@@ -866,8 +1185,8 @@
       },
       {
         "type": "image",
-        "src": "https://placehold.co/500x500",
-        "alt": "オンデマンド本についてのポスター",
+        "src": "assets/3HpuERjw88yCQ4tzmUnV_poster.png",
+        "alt": "ポスター",
         "delay": 5000
       }
     ],
@@ -1137,11 +1456,60 @@
   {
     "keywords": [
       "はい",
-      "いいよ",
+      "ハイ",
+      "うん",
+      "おう",
+      "いい",
+      "良い",
+      "イイ",
       "OK",
-      "ok",
+      "ＯＫ",
+      "おｋ",
+      "りょ"
+    ],
+    "matchType": "exact",
+    "requiredFlags": {},
+    "response": [
+      {
+        "text": "よっし、ページ確認大丈夫！バッチリ！",
+        "delay": 2000
+      }
+    ],
+    "countAsMiss": false,
+    "id": "a05_page_yes_exact",
+    "sceneId": "a05_confirmation_page",
+    "nextScene": "a05_confirmation_numbering",
+    "incrementCounters": {
+      "totalMiss": 1
+    }
+  },
+  {
+    "keywords": [
+      "いいよ",
       "大丈夫",
-      "問題ない"
+      "問題ない",
+      "りょうかい",
+      "りょーかい",
+      "了解",
+      "承知",
+      "おかのした",
+      "いーよ",
+      "おっけー",
+      "オッケー",
+      "おーけー",
+      "オーケー",
+      "おーけい",
+      "オーケイ",
+      "まかせ",
+      "任せ",
+      "だいじょうぶ",
+      "だいじょーぶ",
+      "ダイジョウブ",
+      "問題なし",
+      "無問題",
+      "完璧",
+      "パーフェクト",
+      "完成"
     ],
     "matchType": "includes",
     "requiredFlags": {},
@@ -1162,14 +1530,47 @@
   {
     "keywords": [
       "いいえ",
+      "だめ",
       "ダメ",
+      "駄目",
+      "NO",
+      "ＮＯ",
+      "ノー",
+      "ちがう",
+      "違う",
+      "修正",
+      "変更"
+    ],
+    "matchType": "exact",
+    "requiredFlags": {},
+    "response": [
+      {
+        "text": "え、ダメ？なにか数え忘れているもの、あるっけ？<br>嘘、どうしよう……！<br>……いや、落ち着かなきゃ。ごめん、何のページが足りてないのか教えてくれる？",
+        "delay": 2000
+      }
+    ],
+    "countAsMiss": false,
+    "id": "a05_page_no_exact",
+    "sceneId": "a05_confirmation_page",
+    "nextScene": "a05_confirmation_page_detail"
+  },
+  {
+    "keywords": [
       "NG",
       "ng",
-      "違う",
       "足りない",
       "不足",
       "表紙",
-      "奥付"
+      "奥付",
+      "まちがってる",
+      "間違ってる",
+      "まちがい",
+      "間違い",
+      "直す",
+      "直そう",
+      "追加",
+      "抜け",
+      "忘れ"
     ],
     "matchType": "includes",
     "requiredFlags": {},
@@ -1444,11 +1845,52 @@
   {
     "keywords": [
       "はい",
-      "いいよ",
+      "ない",
+      "おう",
+      "ハイ",
+      "うん",
+      "いい",
+      "良い",
+      "イイ",
       "OK",
-      "ok",
+      "ＯＫ",
+      "おｋ"
+    ],
+    "matchType": "exact",
+    "requiredFlags": {},
+    "response": [
+      {
+        "text": "だよね、ここはバッチリ！",
+        "delay": 2000
+      }
+    ],
+    "countAsMiss": false,
+    "id": "a05_rights_yes_exact",
+    "sceneId": "a05_confirmation_rights",
+    "nextScene": "a06_contribution",
+    "incrementCounters": {
+      "totalMiss": 1000
+    }
+  },
+  {
+    "keywords": [
+      "いいよ",
       "大丈夫",
-      "問題ない"
+      "問題ない",
+      "いーよ",
+      "おっけー",
+      "オッケー",
+      "おーけー",
+      "オーケー",
+      "おーけい",
+      "オーケイ",
+      "だいじょうぶ",
+      "だいじょーぶ",
+      "ダイジョウブ",
+      "無問題",
+      "完璧",
+      "パーフェクト",
+      "完成"
     ],
     "matchType": "includes",
     "requiredFlags": {},
@@ -1469,12 +1911,47 @@
   {
     "keywords": [
       "いいえ",
+      "ある",
+      "だめ",
       "ダメ",
+      "駄目",
+      "NO",
+      "ＮＯ",
+      "ノー",
+      "ちがう",
+      "違う",
+      "修正",
+      "変更"
+    ],
+    "matchType": "exact",
+    "requiredFlags": {},
+    "response": [
+      {
+        "text": "え、ダメなの！？　どこがダメなのか教えて……！",
+        "delay": 2000
+      }
+    ],
+    "countAsMiss": false,
+    "id": "a05_rights_no_exact",
+    "sceneId": "a05_confirmation_rights",
+    "nextScene": "a05_confirmation_rights_logo"
+  },
+  {
+    "keywords": [
       "NG",
       "ng",
-      "違う",
       "気になる",
-      "ある"
+      "きになる",
+      "まちがってる",
+      "間違ってる",
+      "まちがい",
+      "間違い",
+      "直す",
+      "直そう",
+      "追加",
+      "抜け",
+      "忘れ",
+      "足りない"
     ],
     "matchType": "includes",
     "requiredFlags": {},
@@ -1496,7 +1973,8 @@
       "ディビジョン",
       "D:IV_vision",
       "D IV vision",
-      "DIV vision"
+      "DIV vision",
+      "ディヴィジョン"
     ],
     "matchType": "includes",
     "requiredFlags": {},
@@ -1589,6 +2067,8 @@
     "nextScene": "a05_confirmation_page_detail"
   },
   {
+    "id": "a05_page_detail_cover_after_colophon",
+    "sceneId": "a05_confirmation_page_detail",
     "keywords": [
       "表紙",
       "表表紙",
@@ -1598,7 +2078,33 @@
     ],
     "matchType": "includes",
     "requiredFlags": {
-      "a05_pageCoverDone": false
+      "a05_pageCoverDone": false,
+      "a05_pageColophonDone": true
+    },
+    "response": [
+      {
+        "text": "表紙？……そういえば、表表紙とか裏表紙の分もページに入れなきゃいけなかったんだ！<br>あ～もう私ってばうっかりしすぎ……！",
+        "delay": 2000
+      }
+    ],
+    "countAsMiss": false,
+    "setFlags": {
+      "a05_pageCoverDone": true
+    },
+    "nextScene": "a05_confirmation_page_total"
+  },
+  {
+    "keywords": [
+      "表紙",
+      "表表紙",
+      "裏表紙",
+      "表紙分",
+      "裏表紙分"
+    ],
+    "matchType": "includes",
+    "requiredFlags": {
+      "a05_pageCoverDone": false,
+      "a05_pageColophonDone": false
     },
     "response": [
       {
@@ -1646,13 +2152,38 @@
     "nextScene": "a05_confirmation_page_detail"
   },
   {
+    "id": "a05_page_detail_colophon_after_cover",
+    "sceneId": "a05_confirmation_page_detail",
     "keywords": [
       "奥付",
       "奥付け"
     ],
     "matchType": "includes",
     "requiredFlags": {
-      "a05_pageColophonDone": false
+      "a05_pageColophonDone": false,
+      "a05_pageCoverDone": true
+    },
+    "response": [
+      {
+        "text": "奥付？あ、入れていない！データ修正して1ページ分追加するね……！",
+        "delay": 2000
+      }
+    ],
+    "countAsMiss": false,
+    "setFlags": {
+      "a05_pageColophonDone": true
+    },
+    "nextScene": "a05_confirmation_page_total"
+  },
+  {
+    "keywords": [
+      "奥付",
+      "奥付け"
+    ],
+    "matchType": "includes",
+    "requiredFlags": {
+      "a05_pageColophonDone": false,
+      "a05_pageCoverDone": false
     },
     "response": [
       {
@@ -1692,14 +2223,81 @@
   {
     "keywords": [
       "はい",
-      "いいよ",
+      "ハイ",
+      "うん",
+      "おう",
+      "りょ",
+      "いい",
+      "良い",
+      "イイ",
       "OK",
-      "ok",
+      "ＯＫ",
+      "おｋ",
+      "やる",
+      "書く",
+      "描く",
+      "ぜひ"
+    ],
+    "matchType": "exact",
+    "requiredFlags": {},
+    "response": [
+      {
+        "text": "……えへへ、そう言ってくれると思ってた。ありがとう！",
+        "delay": 2000
+      }
+    ],
+    "countAsMiss": false,
+    "id": "a06_request_yes_exact",
+    "sceneId": "a06_contribution_request",
+    "nextScene": "a06_contribution_form"
+  },
+  {
+    "keywords": [
+      "いいよ",
       "わかった",
       "まかせて",
       "任せて",
-      "やる",
-      "もちろん"
+      "もちろん",
+      "りょうかい",
+      "りょーかい",
+      "了解",
+      "承知",
+      "おかのした",
+      "いーよ",
+      "わかりました",
+      "分かった",
+      "分かりました",
+      "おっけー",
+      "オッケー",
+      "おーけー",
+      "オーケー",
+      "おーけい",
+      "オーケイ",
+      "まかせ",
+      "任せ",
+      "だいじょうぶ",
+      "だいじょーぶ",
+      "ダイジョウブ",
+      "大丈夫",
+      "やろう",
+      "やってやる",
+      "寄稿する",
+      "あたりまえ",
+      "当たり前",
+      "しかたない",
+      "仕方ない",
+      "しゃーない",
+      "しゃあない",
+      "今回だけ",
+      "一回きり",
+      "致し方",
+      "燃える",
+      "きあい",
+      "気合",
+      "がんばる",
+      "頑張る",
+      "がんばろう",
+      "頑張ろう"
     ],
     "matchType": "includes",
     "requiredFlags": {},
@@ -1717,13 +2315,53 @@
   {
     "keywords": [
       "いいえ",
+      "だめ",
       "ダメ",
+      "駄目",
+      "NO",
+      "ＮＯ",
+      "ノー",
+      "むり",
+      "ムリ",
+      "無理",
+      "いや",
+      "イヤ",
+      "嫌",
+      "否",
+      "拒否"
+    ],
+    "matchType": "exact",
+    "requiredFlags": {},
+    "response": [
+      {
+        "text": "あーあ、アリス、拗ねちゃったなあ。<br>（名前）が寄稿してくれないって言うから、拗ねちゃったー<br>もうこの世界からも脱出できないまま、この固い椅子の上で一生を過ごすんだー。<br>そして新たに迷い込んだ人々に「キコウシロー、キコウシロー」って襲い掛かる怪異となっちゃうんだー。<br>……何か言うことは？",
+        "delay": 2000
+      }
+    ],
+    "countAsMiss": false,
+    "id": "a06_request_no_exact",
+    "sceneId": "a06_contribution_request",
+    "nextScene": null,
+    "stayInScene": true
+  },
+  {
+    "keywords": [
       "NG",
       "ng",
-      "無理",
-      "嫌",
       "やだ",
-      "できない"
+      "できない",
+      "できん",
+      "書けない",
+      "書けん",
+      "描けない",
+      "描けん",
+      "時間ない",
+      "時間がない",
+      "いきなり",
+      "いまから？",
+      "今から？",
+      "非常識",
+      "報酬"
     ],
     "matchType": "includes",
     "requiredFlags": {},
@@ -1775,10 +2413,16 @@
     "requiredFlags": {
       "a07_printCountReduced": true
     },
-    "response": [],
+    "response": [
+      {
+        "text": "それはもう確認したよ！他にできることはあるかな…？",
+        "delay": 2000
+      }
+    ],
     "countAsMiss": false,
     "id": "a07_hub_print_count_done",
-    "sceneId": "a07_finalQ_hub"
+    "sceneId": "a07_finalQ_hub",
+    "nextScene": "a07_finalQ_hub"
   },
   {
     "keywords": [
@@ -1833,16 +2477,25 @@
       "クーポン",
       "クーポンコード",
       "コード",
-      "ねさげ"
+      "ねさげ",
+      "わりびき",
+      "くーぽん",
+      "こーど"
     ],
     "matchType": "includes",
     "requiredFlags": {
       "a07_couponSuccess": true
     },
-    "response": [],
+    "response": [
+      {
+        "text": "それはもう確認したよ！他にできることはあるかな…？",
+        "delay": 2000
+      }
+    ],
     "countAsMiss": false,
     "id": "a07_hub_coupon_success_done",
-    "sceneId": "a07_finalQ_hub"
+    "sceneId": "a07_finalQ_hub",
+    "nextScene": "a07_finalQ_hub"
   },
   {
     "keywords": [
@@ -1852,16 +2505,25 @@
       "クーポン",
       "クーポンコード",
       "コード",
-      "ねさげ"
+      "ねさげ",
+      "わりびき",
+      "くーぽん",
+      "こーど"
     ],
     "matchType": "includes",
     "requiredFlags": {
       "a07_couponFailed": true
     },
-    "response": [],
+    "response": [
+      {
+        "text": "それはもう確認したよ！他にできることはあるかな…？",
+        "delay": 2000
+      }
+    ],
     "countAsMiss": false,
     "id": "a07_hub_coupon_failed_done",
-    "sceneId": "a07_finalQ_hub"
+    "sceneId": "a07_finalQ_hub",
+    "nextScene": "a07_finalQ_hub"
   },
   {
     "keywords": [
@@ -1871,7 +2533,10 @@
       "クーポン",
       "クーポンコード",
       "コード",
-      "ねさげ"
+      "ねさげ",
+      "わりびき",
+      "くーぽん",
+      "こーど"
     ],
     "matchType": "includes",
     "requiredFlags": {},
@@ -1881,7 +2546,7 @@
         "delay": 2000
       },
       {
-        "text": "そんなものがあるの…！？　コードを教えてもらえたら書くよ！",
+        "text": "あっ…そういえば！500円割引になるコード…ってものがポスターに書いてあったよね！？<br>こっちでは見当たらなかったんだけど、（名前）の方でわかるってこと？<br>コードを教えてもらえたら書くよっ！",
         "delay": 2000
       }
     ],
@@ -1937,7 +2602,7 @@
       "nextSceneIfComplete": "a07_finalize",
       "responseIfIncomplete": [
         {
-          "text": "……うーん。あと500円足りないね。どうしよう。",
+          "text": "うーん。あと800円下がったらいいんだけど……どうしよう？",
           "delay": 2000
         }
       ],
@@ -1963,13 +2628,69 @@
   {
     "keywords": [
       "はい",
-      "いいよ",
+      "ハイ",
+      "うん",
+      "おう",
+      "いい",
+      "良い",
+      "イイ",
       "OK",
-      "ok",
+      "ＯＫ",
+      "おｋ"
+    ],
+    "matchType": "exact",
+    "requiredFlags": {},
+    "response": [
+      {
+        "text": "よし、記入完了！",
+        "delay": 2000
+      }
+    ],
+    "countAsMiss": false,
+    "id": "a07_coupon_confirm_yes_exact",
+    "sceneId": "a07_coupon_confirm",
+    "setFlags": {
+      "a07_couponFailed": true
+    },
+    "checkRequiredFlags": {
+      "flags": [
+        "a07_printCountReduced"
+      ],
+      "nextSceneIfComplete": "a07_finalize",
+      "responseIfIncomplete": [
+        {
+          "text": "うーん。あと800円下がったらいいんだけど……どうしよう？",
+          "delay": 2000
+        }
+      ],
+      "nextSceneIfIncomplete": "a07_finalQ_hub"
+    }
+  },
+  {
+    "keywords": [
+      "いいよ",
       "大丈夫",
       "問題ない",
       "書いて",
-      "それで"
+      "それで",
+      "いーよ",
+      "ええで",
+      "わかった",
+      "わかりました",
+      "分かった",
+      "分かりました",
+      "おっけー",
+      "オッケー",
+      "おーけー",
+      "オーケー",
+      "おーけい",
+      "オーケイ",
+      "もちろん",
+      "モチロン",
+      "勿論",
+      "かいて",
+      "かけ",
+      "書け"
     ],
     "matchType": "includes",
     "requiredFlags": {},
@@ -1992,7 +2713,7 @@
       "nextSceneIfComplete": "a07_finalize",
       "responseIfIncomplete": [
         {
-          "text": "……うーん。あと500円足りないね。どうしよう。",
+          "text": "うーん。あと800円下がったらいいんだけど……どうしよう？",
           "delay": 2000
         }
       ],
@@ -2002,12 +2723,47 @@
   {
     "keywords": [
       "いいえ",
+      "だめ",
       "ダメ",
+      "駄目",
+      "NO",
+      "ＮＯ",
+      "ノー",
+      "あかん",
+      "アカン",
+      "ちがう",
+      "違う",
+      "修正",
+      "変更"
+    ],
+    "matchType": "exact",
+    "requiredFlags": {},
+    "response": [
+      {
+        "text": "あれ、間違えちゃった？もう一回教えてくれる？",
+        "delay": 2000
+      }
+    ],
+    "countAsMiss": false,
+    "id": "a07_coupon_confirm_no_exact",
+    "sceneId": "a07_coupon_confirm",
+    "nextScene": "a07_coupon_input"
+  },
+  {
+    "keywords": [
       "NG",
       "ng",
-      "違う",
       "間違い",
-      "やめて"
+      "やめて",
+      "まちがってる",
+      "間違ってる",
+      "まちがい",
+      "なおす",
+      "直す",
+      "なおしたい",
+      "直したい",
+      "なおそう",
+      "直そう"
     ],
     "matchType": "includes",
     "requiredFlags": {},
@@ -2055,16 +2811,67 @@
   {
     "keywords": [
       "はい",
-      "いいよ",
+      "ハイ",
+      "うん",
+      "おう",
+      "りょ",
+      "いい",
+      "良い",
+      "イイ",
       "OK",
-      "ok",
+      "ＯＫ",
+      "おｋ",
+      "やる"
+    ],
+    "matchType": "exact",
+    "requiredFlags": {},
+    "response": [
+      {
+        "text": "ありがとうございます……！！　この反省は、必ずや次に活かします……。",
+        "delay": 2000
+      }
+    ],
+    "countAsMiss": false,
+    "id": "b02_organize_03_yes_exact",
+    "sceneId": "b02_organize_03",
+    "nextScene": "b02_organize_04"
+  },
+  {
+    "keywords": [
+      "いいよ",
       "わかった",
       "分かった",
       "大丈夫",
       "問題ない",
       "もちろん",
       "任せて",
-      "やる"
+      "りょうかい",
+      "りょーかい",
+      "了解",
+      "承知",
+      "おかのした",
+      "いーよ",
+      "わかりました",
+      "分かりました",
+      "おっけー",
+      "オッケー",
+      "おーけー",
+      "オーケー",
+      "おーけい",
+      "オーケイ",
+      "まかせ",
+      "任せ",
+      "モチロン",
+      "勿論",
+      "しかたない",
+      "仕方ない",
+      "しゃーない",
+      "しゃあない",
+      "今回だけ",
+      "一回きり",
+      "やってやる",
+      "しらべとく",
+      "調べとく"
     ],
     "matchType": "includes",
     "requiredFlags": {},
@@ -2082,14 +2889,45 @@
   {
     "keywords": [
       "いいえ",
+      "やだ",
+      "ヤダ",
+      "いや",
+      "嫌",
+      "むり",
+      "ムリ",
+      "無理",
+      "なんで",
+      "なぜ"
+    ],
+    "matchType": "exact",
+    "requiredFlags": {},
+    "response": [
+      {
+        "text": "本当に失礼なことをお願いしているとは思ってるんです！が、そこをなんとか、お願いします……！！",
+        "delay": 2000
+      }
+    ],
+    "countAsMiss": false,
+    "id": "b02_organize_03_no_exact",
+    "sceneId": "b02_organize_03",
+    "nextScene": null,
+    "stayInScene": true
+  },
+  {
+    "keywords": [
       "ダメ",
       "NG",
       "ng",
-      "無理",
-      "いや",
-      "嫌",
-      "やだ",
-      "できない"
+      "できない",
+      "わからない",
+      "わからん",
+      "知らない",
+      "しらない",
+      "知らん",
+      "どうして",
+      "やりたくない",
+      "自分で調べて",
+      "自分でやって"
     ],
     "matchType": "includes",
     "requiredFlags": {},
@@ -2242,20 +3080,43 @@
         "delay": 2000
       },
       {
-        "text": "あ……印刷所の壁に、コピー本についてってポスターが貼ってあります！<br>ちょっと待って、ズームしたら撮れそう……！<br>（名前）さんにも送りますね！写ってるかな……？",
+        "text": "あ……印刷所の壁に、本作りについてのポスターが貼ってあります！<br>ちょっと待って、ズームしたら撮れそう……！<br>（名前）さんにも送りますね！",
         "delay": 2000
       },
       {
         "type": "image",
-        "src": "https://placehold.co/500x500",
-        "alt": "コピ本についてのポスター",
+        "src": "assets/3HpuERjw88yCQ4tzmUnV_poster.png",
+        "alt": "ポスター",
         "delay": 5000
+      },
+      {
+        "text": "大型の印刷機の他に、職員室で見るようなコピー機もいくつか見えるので……自分で印刷もできそうですね！",
+        "delay": 2000
+      },
+      {
+        "text": "でも、今はこのデスクから動けないから、見に行けない……なんかのきっかけで、動けるようにならないかな。<br>世界に順応する……といえばやっぱりヨモツヘグイ、の必要が！？<br>食堂なら、カレーとか注文できたかもですけど、ここは印刷所ですもんね。<br>むしろ飲食禁止まである？",
+        "delay": 2000
+      },
+      {
+        "text": "……って、雑談してる場合じゃありませんでした。執筆に戻りますっ……他に何かあったらいつでもメッセージ送ってください！",
+        "delay": 2000
       }
     ],
     "countAsMiss": false,
     "id": "b03_req_print_correct",
     "sceneId": "b03_specification_req_print",
-    "nextScene": "b03_specification_req_print_confirm"
+    "setFlags": {
+      "b03_printDone": true
+    },
+    "checkRequiredFlags": {
+      "flags": [
+        "b03_optHintDone",
+        "b03_printDone",
+        "b03_sizeDone"
+      ],
+      "nextSceneIfComplete": "b05_confirmation",
+      "nextSceneIfIncomplete": "b03_specification_hub"
+    }
   },
   {
     "keywords": [],
@@ -2427,11 +3288,60 @@
   {
     "keywords": [
       "はい",
-      "いいよ",
+      "ハイ",
+      "うん",
+      "おう",
+      "いい",
+      "良い",
+      "イイ",
       "OK",
-      "ok",
+      "ＯＫ",
+      "おｋ",
+      "りょ"
+    ],
+    "matchType": "exact",
+    "requiredFlags": {},
+    "response": [
+      {
+        "text": "よっし、ページ確認大丈夫ですね！",
+        "delay": 2000
+      }
+    ],
+    "countAsMiss": false,
+    "id": "b05_page_yes_exact",
+    "sceneId": "b05_confirmation_page",
+    "nextScene": "b05_confirmation_numbering",
+    "incrementCounters": {
+      "totalMiss": 1
+    }
+  },
+  {
+    "keywords": [
+      "いいよ",
       "大丈夫",
-      "問題ない"
+      "問題ない",
+      "りょうかい",
+      "りょーかい",
+      "了解",
+      "承知",
+      "おかのした",
+      "いーよ",
+      "おっけー",
+      "オッケー",
+      "おーけー",
+      "オーケー",
+      "おーけい",
+      "オーケイ",
+      "まかせ",
+      "任せ",
+      "だいじょうぶ",
+      "だいじょーぶ",
+      "ダイジョウブ",
+      "問題なし",
+      "無問題",
+      "完璧",
+      "パーフェクト",
+      "完成"
     ],
     "matchType": "includes",
     "requiredFlags": {},
@@ -2452,13 +3362,46 @@
   {
     "keywords": [
       "いいえ",
+      "だめ",
       "ダメ",
+      "駄目",
+      "NO",
+      "ＮＯ",
+      "ノー",
+      "ちがう",
+      "違う",
+      "修正",
+      "変更"
+    ],
+    "matchType": "exact",
+    "requiredFlags": {},
+    "response": [
+      {
+        "text": "え、ダメですか？<br>あれ、なにか数え忘れているものとかありましたっけ……！？",
+        "delay": 2000
+      }
+    ],
+    "countAsMiss": false,
+    "id": "b05_page_no_exact",
+    "sceneId": "b05_confirmation_page",
+    "nextScene": "b05_confirmation_page_detail"
+  },
+  {
+    "keywords": [
       "NG",
       "ng",
-      "違う",
       "足りない",
       "不足",
-      "奥付"
+      "奥付",
+      "まちがってる",
+      "間違ってる",
+      "まちがい",
+      "間違い",
+      "直す",
+      "直そう",
+      "追加",
+      "抜け",
+      "忘れ"
     ],
     "matchType": "includes",
     "requiredFlags": {},
@@ -2509,11 +3452,53 @@
   {
     "keywords": [
       "はい",
-      "いいよ",
+      "ハイ",
+      "うん",
+      "おう",
+      "いい",
+      "良い",
+      "イイ",
       "OK",
-      "ok",
+      "ＯＫ",
+      "おｋ"
+    ],
+    "matchType": "exact",
+    "requiredFlags": {},
+    "response": [
+      {
+        "text": "（名前）さんがそう言うなら、大丈夫ですね！じゃあ、このまま行きます！",
+        "delay": 2000
+      }
+    ],
+    "countAsMiss": false,
+    "id": "b05_page_total_yes_exact",
+    "sceneId": "b05_confirmation_page_total",
+    "nextScene": "b05_confirmation_numbering",
+    "incrementCounters": {
+      "totalMiss": 1
+    }
+  },
+  {
+    "keywords": [
+      "いいよ",
       "大丈夫",
-      "問題ない"
+      "問題ない",
+      "いーよ",
+      "おっけー",
+      "オッケー",
+      "おーけー",
+      "オーケー",
+      "おーけい",
+      "オーケイ",
+      "まかせ",
+      "任せ",
+      "だいじょうぶ",
+      "だいじょーぶ",
+      "ダイジョウブ",
+      "無問題",
+      "完璧",
+      "パーフェクト",
+      "完成"
     ],
     "matchType": "includes",
     "requiredFlags": {},
@@ -2534,10 +3519,34 @@
   {
     "keywords": [
       "いいえ",
+      "だめ",
       "ダメ",
+      "駄目",
+      "NO",
+      "ＮＯ",
+      "ノー",
+      "ちがう",
+      "違う",
+      "修正",
+      "変更"
+    ],
+    "matchType": "exact",
+    "requiredFlags": {},
+    "response": [
+      {
+        "text": "偶数ですよね。確か、4の倍数……。もう1ページ増やす方法、ちょっと考えてみます！<br>とりあえず、全部で「12P」で印刷できるよう準備しますね！",
+        "delay": 2000
+      }
+    ],
+    "countAsMiss": false,
+    "id": "b05_page_total_no_or_12p_exact",
+    "sceneId": "b05_confirmation_page_total",
+    "nextScene": "b05_confirmation_numbering"
+  },
+  {
+    "keywords": [
       "NG",
       "ng",
-      "違う",
       "12",
       "12P",
       "12p",
@@ -2545,7 +3554,17 @@
       "１２",
       "１２Ｐ",
       "１２ｐ",
-      "１２ページ"
+      "１２ページ",
+      "まちがってる",
+      "間違ってる",
+      "まちがい",
+      "間違い",
+      "直す",
+      "直そう",
+      "追加",
+      "抜け",
+      "忘れ",
+      "偶数"
     ],
     "matchType": "includes",
     "requiredFlags": {},
@@ -2718,12 +3737,53 @@
   {
     "keywords": [
       "はい",
-      "いいよ",
+      "ハイ",
+      "うん",
+      "おう",
+      "いい",
+      "良い",
+      "イイ",
       "OK",
-      "ok",
+      "ＯＫ",
+      "おｋ"
+    ],
+    "matchType": "exact",
+    "requiredFlags": {
+      "b05_impositionCandidateCorrect": true
+    },
+    "response": [
+      {
+        "text": "やった！ありがとうございます！安心！",
+        "delay": 2000
+      }
+    ],
+    "countAsMiss": false,
+    "id": "b05_imposition_confirm_yes_correct_exact",
+    "sceneId": "b05_confirmation_imposition_confirm",
+    "nextScene": "b05_confirmation_rights"
+  },
+  {
+    "keywords": [
+      "いいよ",
       "パーフェクト",
       "問題なし",
-      "大丈夫"
+      "大丈夫",
+      "いーよ",
+      "おっけー",
+      "オッケー",
+      "おーけー",
+      "オーケー",
+      "おーけい",
+      "オーケイ",
+      "まかせ",
+      "任せ",
+      "だいじょうぶ",
+      "だいじょーぶ",
+      "ダイジョウブ",
+      "問題ない",
+      "無問題",
+      "完璧",
+      "完成"
     ],
     "matchType": "includes",
     "requiredFlags": {
@@ -2743,12 +3803,56 @@
   {
     "keywords": [
       "はい",
-      "いいよ",
+      "ハイ",
+      "うん",
+      "おう",
+      "いい",
+      "良い",
+      "イイ",
       "OK",
-      "ok",
+      "ＯＫ",
+      "おｋ"
+    ],
+    "matchType": "exact",
+    "requiredFlags": {
+      "b05_impositionCandidateCorrect": false
+    },
+    "response": [
+      {
+        "text": "やった！ありがとうございます！よかったー！",
+        "delay": 2000
+      }
+    ],
+    "countAsMiss": false,
+    "id": "b05_imposition_confirm_yes_wrong_exact",
+    "sceneId": "b05_confirmation_imposition_confirm",
+    "nextScene": "b05_confirmation_rights",
+    "incrementCounters": {
+      "totalMiss": 5
+    }
+  },
+  {
+    "keywords": [
+      "いいよ",
       "パーフェクト",
       "問題なし",
-      "大丈夫"
+      "大丈夫",
+      "いーよ",
+      "おっけー",
+      "オッケー",
+      "おーけー",
+      "オーケー",
+      "おーけい",
+      "オーケイ",
+      "まかせ",
+      "任せ",
+      "だいじょうぶ",
+      "だいじょーぶ",
+      "ダイジョウブ",
+      "問題ない",
+      "無問題",
+      "完璧",
+      "完成"
     ],
     "matchType": "includes",
     "requiredFlags": {
@@ -2771,12 +3875,49 @@
   {
     "keywords": [
       "いいえ",
+      "だめ",
       "ダメ",
+      "駄目",
+      "NO",
+      "ＮＯ",
+      "ノー",
+      "ちがう",
+      "違う",
+      "修正",
+      "変更"
+    ],
+    "matchType": "exact",
+    "requiredFlags": {},
+    "response": [
+      {
+        "text": "念のため、再確認しておきましょうか…！<br>それではもう一度、並べ方を教えてください！",
+        "delay": 2000
+      }
+    ],
+    "countAsMiss": false,
+    "id": "b05_imposition_confirm_no_exact",
+    "sceneId": "b05_confirmation_imposition_confirm",
+    "nextScene": "b05_confirmation_imposition_wait",
+    "setFlags": {
+      "b05_impositionCandidateCorrect": false
+    }
+  },
+  {
+    "keywords": [
       "NG",
       "ng",
-      "違う",
       "間違い",
-      "やり直し"
+      "やり直し",
+      "まちがってる",
+      "間違ってる",
+      "まちがい",
+      "直す",
+      "直そう",
+      "やりなおす",
+      "やり直す",
+      "やりなおし",
+      "もういちど",
+      "もう一度"
     ],
     "matchType": "includes",
     "requiredFlags": {},
@@ -2797,11 +3938,54 @@
   {
     "keywords": [
       "はい",
-      "いいよ",
+      "ハイ",
+      "うん",
+      "おう",
+      "いい",
+      "良い",
+      "イイ",
       "OK",
-      "ok",
+      "ＯＫ",
+      "おｋ"
+    ],
+    "matchType": "exact",
+    "requiredFlags": {},
+    "response": [
+      {
+        "text": "ですよね、バッチリ！",
+        "delay": 2000
+      }
+    ],
+    "countAsMiss": false,
+    "id": "b05_rights_yes_exact",
+    "sceneId": "b05_confirmation_rights",
+    "nextScene": "b06_contribution",
+    "incrementCounters": {
+      "totalMiss": 1000
+    }
+  },
+  {
+    "keywords": [
+      "いいよ",
       "大丈夫",
-      "問題ない"
+      "問題ない",
+      "いーよ",
+      "おっけー",
+      "オッケー",
+      "おーけー",
+      "オーケー",
+      "おーけい",
+      "オーケイ",
+      "まかせ",
+      "任せ",
+      "だいじょうぶ",
+      "だいじょーぶ",
+      "ダイジョウブ",
+      "問題なし",
+      "無問題",
+      "完璧",
+      "パーフェクト",
+      "完成"
     ],
     "matchType": "includes",
     "requiredFlags": {},
@@ -2822,12 +4006,45 @@
   {
     "keywords": [
       "いいえ",
+      "だめ",
       "ダメ",
+      "駄目",
+      "NO",
+      "ＮＯ",
+      "ノー",
+      "ちがう",
+      "違う",
+      "修正",
+      "変更"
+    ],
+    "matchType": "exact",
+    "requiredFlags": {},
+    "response": [
+      {
+        "text": "え、ダメ？どんなダメなものがあるのかを教えてください！",
+        "delay": 2000
+      }
+    ],
+    "countAsMiss": false,
+    "id": "b05_rights_no_exact",
+    "sceneId": "b05_confirmation_rights",
+    "nextScene": "b05_confirmation_rights_logo"
+  },
+  {
+    "keywords": [
       "NG",
       "ng",
-      "違う",
       "気になる",
-      "ある"
+      "ある",
+      "まちがってる",
+      "間違ってる",
+      "まちがい",
+      "間違い",
+      "直す",
+      "直そう",
+      "追加",
+      "抜け",
+      "忘れ"
     ],
     "matchType": "includes",
     "requiredFlags": {},
@@ -2931,16 +4148,81 @@
   {
     "keywords": [
       "はい",
-      "いいよ",
+      "ハイ",
+      "うん",
+      "おう",
+      "りょ",
+      "いい",
+      "良い",
+      "イイ",
       "OK",
-      "ok",
+      "ＯＫ",
+      "おｋ",
+      "やる",
+      "書く",
+      "描く",
+      "ぜひ"
+    ],
+    "matchType": "exact",
+    "requiredFlags": {},
+    "response": [
+      {
+        "text": "本当ですか！？ありがとうございます……！！",
+        "delay": 2000
+      }
+    ],
+    "countAsMiss": false,
+    "id": "b06_request_yes_exact",
+    "sceneId": "b06_contribution_request",
+    "nextScene": "b06_contribution_form"
+  },
+  {
+    "keywords": [
+      "いいよ",
       "わかった",
       "分かった",
       "まかせて",
       "任せて",
-      "やる",
       "もちろん",
-      "大丈夫"
+      "大丈夫",
+      "りょうかい",
+      "りょーかい",
+      "了解",
+      "承知",
+      "おかのした",
+      "いーよ",
+      "わかりました",
+      "分かりました",
+      "おっけー",
+      "オッケー",
+      "おーけー",
+      "オーケー",
+      "おーけい",
+      "オーケイ",
+      "まかせ",
+      "任せ",
+      "だいじょうぶ",
+      "だいじょーぶ",
+      "ダイジョウブ",
+      "やろう",
+      "やってやる",
+      "寄稿する",
+      "あたりまえ",
+      "当たり前",
+      "しかたない",
+      "仕方ない",
+      "しゃーない",
+      "しゃあない",
+      "今回だけ",
+      "一回きり",
+      "致し方",
+      "燃える",
+      "きあい",
+      "気合",
+      "がんばる",
+      "頑張る",
+      "がんばろう",
+      "頑張ろう"
     ],
     "matchType": "includes",
     "requiredFlags": {},
@@ -2958,14 +4240,53 @@
   {
     "keywords": [
       "いいえ",
+      "だめ",
       "ダメ",
-      "NG",
-      "ng",
+      "駄目",
+      "NO",
+      "ＮＯ",
+      "ノー",
+      "むり",
+      "ムリ",
       "無理",
       "いや",
+      "イヤ",
       "嫌",
+      "否",
+      "拒否"
+    ],
+    "matchType": "exact",
+    "requiredFlags": {},
+    "response": [
+      {
+        "text": "……無理なことを言ってるのは承知の上です！<br>でも、（名前）さんに私のような後悔をしてほしくない。これも、何かの縁だと思うんです。<br>考え直してもらえませんか……？",
+        "delay": 2000
+      }
+    ],
+    "countAsMiss": false,
+    "id": "b06_request_no_exact",
+    "sceneId": "b06_contribution_request",
+    "nextScene": null,
+    "stayInScene": true
+  },
+  {
+    "keywords": [
+      "NG",
+      "ng",
       "やだ",
-      "できない"
+      "できない",
+      "できん",
+      "書けない",
+      "書けん",
+      "描けない",
+      "描けん",
+      "時間ない",
+      "時間がない",
+      "いきなり",
+      "いまから？",
+      "今から？",
+      "非常識",
+      "報酬"
     ],
     "matchType": "includes",
     "requiredFlags": {},
@@ -3094,7 +4415,7 @@
     "requiredFlags": {},
     "response": [
       {
-        "text": "うーん……違うみたいです。<br>他に思いついたパスワードがあったら、教えてください！",
+        "text": "うーん……違うみたいです。<br>他に思いついたパスコードがあったら、教えてください！",
         "delay": 2000
       }
     ],
@@ -3156,7 +4477,7 @@
       {
         "type": "pdf",
         "src": "assets/PQLwniLf6akXn9mZX4Zf_smalltalk_local_folder.pdf",
-        "fileName": "不明な原稿データ.pdf",
+        "fileName": "ローカルフォルダ原稿.pdf",
         "delay": 2000
       },
       {
@@ -4694,7 +6015,6 @@
     "keywords": [
       "好きです",
       "告白",
-      "付き合って",
       "結婚",
       "プロポーズ"
     ],
@@ -4837,8 +6157,8 @@
       },
       {
         "type": "image",
-        "src": "https://placehold.co/500x500",
-        "alt": "アリスの自撮り",
+        "src": "assets/cy5efe2TEfUYbkeAJKKy_selfie.jpg",
+        "alt": "自撮り写真",
         "delay": 5000
       },
       {
@@ -6675,7 +7995,7 @@
       {
         "type": "pdf",
         "src": "assets/PQLwniLf6akXn9mZX4Zf_smalltalk_local_folder.pdf",
-        "fileName": "不明な原稿データ.pdf",
+        "fileName": "ローカルフォルダ原稿.pdf",
         "delay": 2000
       },
       {
@@ -8349,7 +9669,6 @@
     "keywords": [
       "好きです",
       "告白",
-      "付き合って",
       "結婚",
       "プロポーズ"
     ],
@@ -8498,8 +9817,8 @@
       },
       {
         "type": "image",
-        "src": "https://placehold.co/500x500",
-        "alt": "アリスの自撮り",
+        "src": "assets/cy5efe2TEfUYbkeAJKKy_selfie.jpg",
+        "alt": "自撮り写真",
         "delay": 5000
       },
       {
@@ -10428,24 +11747,58 @@
     "countAsMiss": false
   },
   {
-    "id": "common_name_a_confirm_yes",
+    "id": "common_name_a_confirm_yes_exact",
     "sceneId": "01_common_name_a_confirm",
     "keywords": [
       "はい",
+      "ハイ",
       "うん",
+      "おう",
+      "YES",
+      "Yes",
+      "イエス",
+      "いえす",
+      "いい",
+      "良い",
+      "イイ",
       "OK",
-      "ok",
+      "ＯＫ",
+      "おｋ",
+      "おけ",
+      "あってる",
+      "合ってる"
+    ],
+    "matchType": "exact",
+    "requiredFlags": {},
+    "response": [
+      {
+        "text": "（名前）！改めて、今回もよろしくね……！",
+        "delay": 2000
+      }
+    ],
+    "countAsMiss": false,
+    "commitPendingPlayerName": true,
+    "nextScene": "a02_organize_start"
+  },
+  {
+    "id": "common_name_a_confirm_yes",
+    "sceneId": "01_common_name_a_confirm",
+    "keywords": [
       "オーケー",
       "おーけー",
-      "あってる",
-      "合ってる",
       "大丈夫",
       "だいじょうぶ",
       "それで",
       "それでいい",
       "それで大丈夫",
       "正しい",
-      "間違いない"
+      "間違いない",
+      "いーよ",
+      "ええで",
+      "おっけー",
+      "オッケー",
+      "おーけい",
+      "オーケイ"
     ],
     "matchType": "includes",
     "requiredFlags": {},
@@ -10460,13 +11813,34 @@
     "nextScene": "a02_organize_start"
   },
   {
-    "id": "common_name_a_confirm_no",
+    "id": "common_name_a_confirm_no_exact",
     "sceneId": "01_common_name_a_confirm",
     "keywords": [
       "いいえ",
-      "いや",
-      "違う",
+      "だめ",
+      "ダメ",
+      "駄目",
+      "NO",
+      "ＮＯ",
+      "ノー",
+      "あかん",
+      "アカン",
       "ちがう",
+      "違う",
+      "修正",
+      "変更"
+    ],
+    "matchType": "exact",
+    "requiredFlags": {},
+    "response": [],
+    "countAsMiss": false,
+    "nextScene": "01_common_name_a_retry"
+  },
+  {
+    "id": "common_name_a_confirm_no",
+    "sceneId": "01_common_name_a_confirm",
+    "keywords": [
+      "いや",
       "間違えた",
       "まちがえた",
       "間違い",
@@ -10477,7 +11851,17 @@
       "もういっかい",
       "再入力",
       "変える",
-      "変更"
+      "あってない",
+      "合ってない",
+      "まちがってる",
+      "間違ってる",
+      "まちがい",
+      "なおす",
+      "直す",
+      "なおしたい",
+      "直したい",
+      "なおそう",
+      "直そう"
     ],
     "matchType": "includes",
     "requiredFlags": {},
@@ -10518,8 +11902,6 @@
     "keywords": [
       "はい",
       "うん",
-      "OK",
-      "ok",
       "オーケー",
       "おーけー",
       "あってる",
@@ -10647,5 +12029,151 @@
     "response": [],
     "countAsMiss": false,
     "nextScene": "a08-1_true_after_reaction_3"
+  },
+  {
+    "id": "b08_true_help_again_yes_exact",
+    "sceneId": "b08-1_true",
+    "keywords": [
+      "はい",
+      "ハイ",
+      "うん",
+      "おう",
+      "りょ",
+      "OK",
+      "ＯＫ",
+      "おｋ",
+      "やる",
+      "守護",
+      "しゅご"
+    ],
+    "matchType": "exact",
+    "requiredFlags": {},
+    "response": [
+      {
+        "text": "えへへ、ありがとう……！",
+        "delay": 2000
+      }
+    ],
+    "countAsMiss": false,
+    "nextScene": "b08-1_true_after_reaction"
+  },
+  {
+    "id": "b08_true_help_again_yes_includes",
+    "sceneId": "b08-1_true",
+    "keywords": [
+      "いいよ",
+      "いーよ",
+      "りょうかい",
+      "りょーかい",
+      "了解",
+      "承知",
+      "おかのした",
+      "おっけー",
+      "オッケー",
+      "まかせて",
+      "任せて",
+      "まかせろ",
+      "任せろ",
+      "まかせな",
+      "任せな",
+      "もちろん",
+      "勿論",
+      "たよって",
+      "頼って",
+      "たよれ",
+      "頼れ",
+      "てつだう",
+      "手伝う",
+      "たすける",
+      "助ける",
+      "すくう",
+      "救う",
+      "すくいだす",
+      "救い出す",
+      "連絡して",
+      "あたりまえ",
+      "当たり前",
+      "やってやる"
+    ],
+    "matchType": "includes",
+    "requiredFlags": {},
+    "response": [
+      {
+        "text": "えへへ、ありがとう……！",
+        "delay": 2000
+      }
+    ],
+    "countAsMiss": false,
+    "nextScene": "b08-1_true_after_reaction"
+  },
+  {
+    "id": "b08_true_help_again_no_exact",
+    "sceneId": "b08-1_true",
+    "keywords": [
+      "いいえ",
+      "イイエ",
+      "やだ",
+      "ヤダ",
+      "いや",
+      "嫌",
+      "NO",
+      "ＮＯ",
+      "NG",
+      "ＮＧ",
+      "むり",
+      "無理",
+      "えー"
+    ],
+    "matchType": "exact",
+    "requiredFlags": {},
+    "response": [
+      {
+        "text": "もう、意地悪ですよ！",
+        "delay": 2000
+      }
+    ],
+    "countAsMiss": false,
+    "nextScene": "b08-1_true_after_reaction"
+  },
+  {
+    "id": "b08_true_help_again_no_includes",
+    "sceneId": "b08-1_true",
+    "keywords": [
+      "どうしよう",
+      "どうしようかな",
+      "がんばれ",
+      "頑張れ",
+      "ひとりで",
+      "一人で",
+      "ファイト",
+      "手伝えない",
+      "手伝わない",
+      "勘弁して"
+    ],
+    "matchType": "includes",
+    "requiredFlags": {},
+    "response": [
+      {
+        "text": "もう、意地悪ですよ！",
+        "delay": 2000
+      }
+    ],
+    "countAsMiss": false,
+    "nextScene": "b08-1_true_after_reaction"
+  },
+  {
+    "id": "b08_true_help_again_any",
+    "sceneId": "b08-1_true",
+    "keywords": [],
+    "matchType": "any",
+    "requiredFlags": {},
+    "response": [
+      {
+        "text": "もう、意地悪ですよ！",
+        "delay": 2000
+      }
+    ],
+    "countAsMiss": false,
+    "nextScene": "b08-1_true_after_reaction"
   }
 ]

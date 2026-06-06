@@ -11,26 +11,21 @@ const DATA_PATHS = {
 
 const STAMPS = [
   {
-    id: "cat",
-    src: "assets/stamps/cat.png",
-    alt: "猫スタンプ"
+    id: "AMGY",
+    src: "assets/stamps/AMGY.png",
+    alt: "AMGYスタンプ"
   },
   {
-    id: "dog",
-    src: "assets/stamps/dog.png",
-    alt: "犬スタンプ"
-  },
-  {
-    id: "rabbit",
-    src: "assets/stamps/rabbit.png",
-    alt: "兎スタンプ"
-  },
-  {
-    id: "KATSUO",
-    src: "assets/stamps/KATSUO.png",
-    alt: "鰹スタンプ"
+    id: "kKana",
+    src: "assets/stamps/kKana.png",
+    alt: "金澤かなスタンプ"
   }
 ];
+
+const STAMP_REPLY_IDS = {
+  AMGY: "kKana",
+  kKana: "AMGY"
+};
 
 let engine;
 
@@ -113,19 +108,41 @@ function setupStampPicker({ keywordEngine, renderer }) {
   renderer.bindStampPicker(STAMPS, (stamp) => {
     if (keywordEngine.gameState.isInputLocked) return;
 
-    const message = {
-      sender: "user",
-      type: "stamp",
-      stampId: stamp.id,
-      src: stamp.src,
-      alt: stamp.alt,
-      time: new Date().toISOString()
-    };
+    const message = createStampMessage("user", stamp);
 
     keywordEngine.gameState.history.push(message);
     saveGameState(keywordEngine.gameState);
     renderer.appendMessage(message);
+
+    const replyStamp = getStampReply(stamp);
+    if (!replyStamp) return;
+
+    window.setTimeout(() => {
+      if (keywordEngine.gameState.isInputLocked || keywordEngine.gameState.isBadEnd) return;
+
+      const replyMessage = createStampMessage("bot", replyStamp);
+      keywordEngine.gameState.history.push(replyMessage);
+      saveGameState(keywordEngine.gameState);
+      renderer.appendMessage(replyMessage);
+    }, 2000);
   });
+}
+
+function getStampReply(stamp) {
+  const replyId = STAMP_REPLY_IDS[stamp.id];
+  if (!replyId) return null;
+  return STAMPS.find((item) => item.id === replyId) || null;
+}
+
+function createStampMessage(sender, stamp) {
+  return {
+    sender,
+    type: "stamp",
+    stampId: stamp.id,
+    src: stamp.src,
+    alt: stamp.alt,
+    time: new Date().toISOString()
+  };
 }
 
 // === Debug scene selector options start ===
