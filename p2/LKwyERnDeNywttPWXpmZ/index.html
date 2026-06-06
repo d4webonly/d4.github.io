@@ -1,0 +1,140 @@
+﻿<!doctype html>
+<html lang="ja">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7592TN5LEE"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7592TN5LEE');
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>幽廻印刷所</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/favicon.ico" />
+  </head>
+  <body>
+    <div id="bootEffect" class="boot-effect" aria-hidden="true">
+      <div class="boot-effect__noise"></div>
+      <div class="boot-effect__scanline"></div>
+      <div class="boot-effect__flash"></div>
+    </div>
+
+    <div class="app-shell">
+      <header class="chat-header">
+        <img
+          class="avatar"
+          src="assets/alice_icon.jpg"
+          alt="icon"
+          >
+        <div class="profile">
+          <div class="profile-name">繧｢繝ｪ繧ｹ</div>
+          <div id="statusText" class="profile-status online">オンライン</div>
+        </div>
+        <button
+          class="privacy-cookie-button"
+          type="button"
+          aria-label="プライバシーポリシーを表示"
+          title="プライバシーポリシー"
+        >
+          <span class="material-symbols-outlined" aria-hidden="true">cookie</span>
+        </button>
+      </header>
+
+      <main id="chatLog" class="chat-log" aria-live="polite">
+        <div id="messageList" class="message-list"></div>
+        <div id="typingIndicator" class="typing-indicator" hidden>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <button id="newMessageButton" class="new-message-button" type="button" hidden>
+          新規メッセージがあります
+        </button>
+      </main>
+
+      <form id="messageForm" class="message-form" autocomplete="off">
+        <input
+          id="messageInput"
+          class="message-input"
+          type="text"
+          name="message"
+          placeholder="メッセージを入力"
+          aria-label="メッセージ"
+        >
+        <div id="stampPicker" class="stamp-picker" hidden></div>
+        <button
+          id="stampButton"
+          class="stamp-button"
+          type="button"
+          aria-label="スタンプを選択"
+          title="スタンプ"
+        >
+          <span class="material-symbols-outlined" aria-hidden="true">mood</span>
+        </button>
+        <button id="sendButton" class="send-button" type="submit">送信</button>
+      </form>
+    </div>
+
+    <section id="debugPanel" class="debug-panel" hidden>
+      <div class="debug-panel__header">
+        <strong>Debug</strong>
+        <button id="debugToggleButton" class="debug-toggle-button" type="button" aria-expanded="true">-</button>
+      </div>
+      <div id="debugPanelBody" class="debug-panel__body">
+        <div class="debug-action-row">
+          <button id="debugResetButton" type="button">save reset</button>
+          <button id="debugLogButton" type="button">state consoleLog</button>
+        </div>
+        <label>
+          currentScene
+          <select id="debugSceneSelect"></select>
+        </label>
+        <label>
+          playerName
+          <div class="debug-inline-row">
+            <input id="debugPlayerNameInput" type="text" placeholder="playerName">
+            <button id="debugPlayerNameButton" type="button">change</button>
+          </div>
+        </label>
+        <div class="debug-value">
+          totalMiss: <span id="debugMissCount">0</span>
+        </div>
+        <div class="debug-button-grid" aria-label="miss count controls">
+          <button id="debugMissPlusOneButton" type="button">+1</button>
+          <button id="debugMissPlusThousandButton" type="button">+1000</button>
+          <button id="debugMissResetButton" type="button">0</button>
+        </div>
+        <div class="debug-value">
+          deadline: <span id="debugDeadlineRemaining">notStarted</span>
+        </div>
+        <button id="debugSetDeadlineFiveSecondsButton" type="button">3 sec left</button>
+        <div class="debug-flag-controls" aria-label="a07 flag controls">
+          <label>
+            <input id="debugFlagPrintCountReduced" type="checkbox">
+            reduceTheNumberOfBooks
+          </label>
+          <label>
+            <input id="debugFlagCouponSuccess" type="checkbox">
+            codeSuccess
+          </label>
+          <label>
+            <input id="debugFlagCouponFailed" type="checkbox">
+            codeFailure
+          </label>
+        </div>
+        <div class="debug-flags">
+          <div>flags</div>
+          <pre id="debugFlagsOutput">{}</pre>
+        </div>
+      </div>
+    </section>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
+
